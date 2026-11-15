@@ -1,0 +1,69 @@
+/* One overview: person → current measurements → signals. */
+.topbar{display:none}
+main{padding-top:36px}
+.dashboard-heading{gap:24px;margin-bottom:28px}
+.dashboard-header-actions{display:flex;align-items:center;gap:12px}
+.dashboard-crew label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.dashboard-crew select{min-height:41px;min-width:178px;padding:10px 32px 10px 14px;font-size:12px;border-radius:9px}
+.dashboard-layout{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.25fr);gap:24px;align-items:stretch}
+.dashboard-layout .anatomy-panel{min-height:582px;background:radial-gradient(ellipse at 50% 45%,#2d233d33,transparent 65%),#121318}
+.dashboard-layout .person-info{padding:26px 27px 0}
+.dashboard-layout .person-info h2{font-size:22px}
+.dashboard-layout .person-info p{font-size:11px;margin:8px 0 0}
+.dashboard-layout .anatomy-frame{min-height:430px;margin-top:12px}
+.dashboard-layout .model-controls{padding:5px 26px 22px}
+.dashboard-layout .model-controls>span{font-size:10px;color:#9992a7;max-width:none}
+.dashboard-layout .model-controls .segmented button{font-size:10px;padding:7px 9px}
+.dashboard-data{display:flex;flex-direction:column;gap:20px;min-width:0}
+.dashboard-data .vitals-panel{flex:1}
+.dashboard-data .panel-head{padding:24px 24px 0}
+.dashboard-data .panel-title{font-size:14px;font-weight:500}
+.dashboard-data .panel-label{font-size:10px;color:#858793;white-space:nowrap}
+.dashboard-data .metric-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding:22px 24px 20px;flex:1;align-content:start}
+.dashboard-data .metric-card{min-height:119px;padding:16px 16px 13px;background:#18191f;border-color:#292a33;position:relative;gap:0}
+.dashboard-data .metric-label{font-size:11px;color:#a6a7b5;align-items:center}
+.dashboard-data .metric-label .icon{display:block;width:14px;height:14px;opacity:.55}
+.dashboard-data .metric-reading{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px;margin-top:17px;margin-bottom:0}
+.dashboard-data .metric-reading strong{font-size:29px;letter-spacing:-.8px;line-height:1.15}
+.dashboard-data .metric-reading small{display:inline;font-size:9px;margin:0;white-space:nowrap;color:#9a95a5}
+.metric-caption{font-size:9px;margin-top:7px;line-height:1.4;color:#a29baa}
+.metric-caption.warning{color:#dfba80}.metric-caption.critical{color:#f2a1ac}
+.dashboard-data .metric-card.warning{background:#251f19;border-color:#57432c}
+.dashboard-data .metric-card.critical{background:#291c25;border-color:#683a4b}
+.dashboard-data .metric-card:hover{border-color:#685879;background:#211d2a}
+.dashboard-vitals-foot{display:flex;align-items:center;justify-content:space-between;margin:0 24px;padding:15px 0 19px;border-top:1px solid #2b2933;gap:14px;flex-wrap:wrap}
+.wellbeing-link{display:flex;align-items:center;gap:9px;padding:3px 0;border:0;background:transparent;font-size:11px;color:#aaa2b5;text-align:left}
+.wellbeing-link>.icon{width:16px;height:16px;color:#b8a1d7}.wellbeing-link b{font-size:16px;font-weight:400;margin-left:4px;color:#d8ccdf;white-space:nowrap}.wellbeing-link small{font-size:10px;color:#898293;margin-left:4px}
+.dashboard-limit-link{display:flex;align-items:center;gap:8px;font-size:10px;color:#aaa1b7;border:0;background:transparent;padding:6px 0}
+.dashboard-limit-link .icon{width:14px;height:14px}.wellbeing-link:hover,.dashboard-limit-link:hover{color:#e1d0f1}
+.dashboard-attention{flex:0 0 auto;min-height:123px}
+.dashboard-attention .panel-head{padding-top:22px;align-items:center}
+.attention-all{display:inline-flex;align-items:center;gap:6px;color:#aaa0ba;font-size:10px;white-space:nowrap;text-decoration:none}.attention-all .icon{width:13px;height:13px}
+.attention-list{padding:10px 24px 14px}
+.attention-row{border:0;border-bottom:1px solid #2b2933;display:flex;align-items:center;gap:12px;text-align:left;width:100%;background:transparent;padding:13px 0;color:inherit}
+.attention-row:last-child{border-bottom:0}.attention-row:hover b{color:#e0c9f2}.attention-row>span:nth-child(2){flex:1;min-width:0}.attention-row b{display:block;font-size:12px;font-weight:400;color:#d5c8df;line-height:1.4}.attention-row small{display:block;color:#9790a4;font-size:10px;margin-top:4px}
+.attention-row>.icon{width:15px;height:15px;color:#95849f;flex-shrink:0}.attention-marker{width:31px;height:31px;display:grid;place-items:center;border-radius:9px;background:#2b251e;color:#dfba80;flex-shrink:0}.attention-marker.critical{background:#311e29;color:#f2a1ac}.attention-marker .icon{width:15px;height:15px}
+.attention-empty{display:flex;align-items:center;gap:10px;padding:22px 24px 24px;color:#aaa1b6}.attention-empty>.icon{width:16px;height:16px;color:#8d8998}.attention-empty p{font-size:12px;margin:0;line-height:1.5}
+.attention-more{display:block;margin:0 24px 21px;font-size:10px;color:#b6a0ca;text-decoration:none}
+.simulator-workspace{max-width:880px}.simulation-clock{font-size:11px;color:#a098ae;margin-left:auto}.simulator-workspace .sim-panel{padding:30px}.simulator-workspace .sim-title h2{font-size:16px}.simulator-workspace .sim-desc{font-size:12px}.simulator-workspace .scenarios{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.simulator-workspace .scenario-btn{font-size:11px;padding:16px 10px}.simulator-workspace .scenario-label{font-size:10px}.simulator-workspace .scenario-label b{font-size:11px}
+footer{padding-top:24px;padding-bottom:22px;font-size:9px;line-height:1.7}
+/* Labels keep the main navigation understandable without tooltips. */
+@media(min-width:1181px){
+  .sidebar{width:204px;padding:31px 18px 23px}.brand{justify-content:flex-start;gap:11px;padding:0 8px}.brand>svg{width:30px;height:30px;flex-shrink:0}.brand>span{display:block;font-size:17px;letter-spacing:2px;font-weight:500;color:#d7cee4}.brand small{display:none}
+  nav{margin-top:43px;gap:7px}nav a{justify-content:flex-start;padding:13px 14px;font-size:12px;gap:12px;height:45px;border:1px solid transparent;border-radius:10px}nav a .icon{width:18px;height:18px;flex-shrink:0}.nav-text{display:block}
+  .sidebar #nav-alerts{position:static;min-width:18px;height:18px;margin-left:auto;padding:0 5px;border:0;font-size:9px;border-radius:5px}
+  nav a.simulator-nav{margin-top:20px;border-top-color:#272631;border-radius:0 0 10px 10px;padding-top:18px;height:50px}
+  .sidebar-guide{font-size:11px;justify-content:flex-start;gap:12px;padding:12px 14px}.sidebar-guide .icon{width:18px;height:18px}
+  .app-shell{margin-left:204px}main{padding:36px 36px 12px;max-width:1500px}footer{padding-left:36px;padding-right:36px}
+}
+@media(max-width:1180px){.nav-text{font-size:0}main{padding-top:30px}.dashboard-layout{grid-template-columns:minmax(0,.85fr) minmax(0,1fr);gap:20px}.dashboard-data .metric-grid{grid-template-columns:repeat(2,minmax(0,1fr));padding:20px;gap:11px}.dashboard-data .metric-card{min-height:107px;padding:14px}.dashboard-layout .person-info{padding:24px 22px 0}.dashboard-layout .profile-identity{gap:11px}.dashboard-layout .person-info h2{font-size:20px}.dashboard-layout .person-info p{font-size:10px}.dashboard-layout .profile-headshot{width:38px;height:38px}.dashboard-data .panel-head{padding:22px 20px 0}.dashboard-vitals-foot{margin:0 20px}.dashboard-data .metric-reading strong{font-size:28px}.dashboard-layout .anatomy-panel{min-height:640px}.dashboard-layout .anatomy-frame{min-height:490px}.attention-list{padding-right:20px;padding-left:20px}}
+@media(min-width:511px) and (max-width:1180px){nav{margin-top:33px;gap:5px}nav a{flex-direction:column;height:58px;padding:9px 0;gap:7px}.nav-text{font-size:9px;line-height:1.2}.sidebar .brand>svg{width:31px;height:31px}.sidebar-guide{padding-top:9px;padding-bottom:9px}}
+@media(max-width:840px){.dashboard-layout{grid-template-columns:1fr}.dashboard-data{order:0}.dashboard-layout .anatomy-panel{order:1;min-height:600px}.dashboard-layout .anatomy-frame{min-height:450px}.dashboard-data .metric-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.dashboard-heading{align-items:flex-start;flex-direction:column;gap:20px}.dashboard-header-actions{width:100%}.dashboard-crew{flex:1}.dashboard-crew select{width:100%}.dashboard-layout .person-info h2{font-size:23px}.dashboard-layout .profile-headshot{width:44px;height:44px}.dashboard-layout .model-controls{padding-left:24px;padding-right:24px}}
+@media(max-width:510px){
+  nav a{width:40px;height:43px;margin-top:10px}nav a .icon{width:18px;height:18px}nav{justify-content:space-between}.sidebar{padding:0 9px}
+  main{padding-top:27px}.dashboard-heading{gap:19px;margin-bottom:24px}.dashboard-heading h1{font-size:26px;max-width:none}.dashboard-header-actions{gap:9px}.dashboard-crew{min-width:0}.dashboard-crew select{min-width:0;font-size:11px;min-height:40px;padding:10px 26px 10px 11px}.dashboard-header-actions .button{font-size:11px;padding:10px 12px;gap:6px}.dashboard-header-actions .button .icon{width:14px;height:14px}
+  .dashboard-layout{gap:20px}.dashboard-data{gap:16px}.dashboard-data .panel-head{padding:21px 18px 0}.dashboard-data .panel-title{font-size:13px}.dashboard-data .panel-label{font-size:9px}.dashboard-data .metric-grid{grid-template-columns:repeat(2,minmax(0,1fr));padding:19px 16px 16px;gap:10px}.dashboard-data .metric-card{min-height:106px;padding:14px 13px 12px}.dashboard-data .metric-label{font-size:10px}.dashboard-data .metric-label .icon{width:12px;height:12px}.dashboard-data .metric-reading{margin-top:15px;gap:5px}.dashboard-data .metric-reading strong{font-size:27px}.dashboard-data .metric-reading small{font-size:8px}.metric-caption{font-size:8px}
+  .dashboard-vitals-foot{margin:0 18px;padding:13px 0 17px;gap:10px}.wellbeing-link{font-size:10px;gap:6px}.wellbeing-link b{font-size:15px}.wellbeing-link small{font-size:9px}.dashboard-limit-link{font-size:9px;gap:6px}.dashboard-attention{min-height:113px}.attention-all{font-size:9px}.attention-empty{padding:22px 18px}.attention-empty p{font-size:11px}.attention-list{padding:8px 18px 12px}.attention-row b{font-size:11px}.attention-row small{font-size:9px}.attention-more{margin-left:18px;font-size:9px}
+  .dashboard-layout .anatomy-panel{min-height:550px}.dashboard-layout .anatomy-frame{min-height:400px}.dashboard-layout .person-info{padding:22px 20px 0}.dashboard-layout .person-info h2{font-size:21px}.dashboard-layout .model-controls{padding:4px 20px 20px}.dashboard-layout .model-controls>span{font-size:9px;max-width:130px}.dashboard-layout .model-controls .segmented button{font-size:9px;padding:6px 8px}
+  .simulation-clock{margin-left:0;width:100%;font-size:10px}.simulator-workspace .sim-panel{padding:23px 20px}.simulator-workspace .sim-title h2{font-size:14px}.simulator-workspace .sim-desc{font-size:11px}.simulator-workspace .scenarios{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.simulator-workspace .scenario-btn{font-size:10px;padding:14px 8px}.simulator-workspace .scenario-label{font-size:8px}.simulator-workspace .scenario-label b{font-size:9px}footer{font-size:8px;padding-bottom:85px}
+}

@@ -1,0 +1,20 @@
+{
+  "name": "astris-crew-health",
+  "version": "2.7.0",
+  "private": true,
+  "description": "ASTRIS Ground/Crew public demonstration with Groq cloud AI and persistent Supabase journal storage",
+  "scripts": {
+    "start": "node server.cjs",
+    "test": "node --test tests/engine.test.cjs tests/analytics.test.cjs tests/research.test.cjs tests/forecast.test.cjs tests/operator.test.cjs tests/transport.test.cjs tests/leadtime.test.cjs tests/benchmark.test.cjs tests/auth.test.cjs tests/server-live.test.cjs tests/ai.test.cjs tests/auto-ollama.test.cjs tests/demo-week.test.cjs tests/crew-team.test.cjs tests/wellness-ui.test.cjs tests/groq-cloud.test.cjs",
+    "build": "node scripts/build-standalone.cjs",
+    "check:standalone": "node scripts/verify-standalone.cjs",
+    "control": "node scripts/run-control.cjs",
+    "package": "node scripts/package-project.cjs",
+    "test:auth": "node --test tests/auth.test.cjs",
+    "test:live": "node --test tests/server-live.test.cjs tests/ai.test.cjs",
+    "ai:check": "node scripts/check-ollama.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

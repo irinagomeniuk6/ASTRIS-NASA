@@ -1,0 +1,6953 @@
+{
+  "version": "astris-control-v1",
+  "dataType": "independent synthetic control, not clinical",
+  "trainPoints": 72,
+  "testPoints": 48,
+  "horizons": [
+    1,
+    5,
+    10
+  ],
+  "cases": [
+    {
+      "id": "level",
+      "name": "Рівень із шумом",
+      "seed": 91001,
+      "trainPoints": 72,
+      "testPoints": 48,
+      "unit": "ум. од.",
+      "byHorizon": [
+        {
+          "horizon": 1,
+          "n": 7,
+          "mae": 0.602599512820646,
+          "rmse": 0.688052532729419,
+          "bias": -0.29819365661212366,
+          "naiveRmse": 0.725405709097003,
+          "intervalN": 7,
+          "coverage": 85.71428571428571,
+          "samples": [
+            {
+              "originTs": 1767229860000,
+              "trainTo": 1767229860000,
+              "targetTs": 1767229920000,
+              "actual": 50.059292792528865,
+              "predicted": 50.154561153119424,
+              "naive": 49.9359517596662,
+              "model": "linear",
+              "lower": 49.14435965524054,
+              "upper": 51.164762650998306,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230220000,
+              "trainTo": 1767230220000,
+              "targetTs": 1767230280000,
+              "actual": 50.06227428913117,
+              "predicted": 50.58402971086092,
+              "naive": 50.7510502833873,
+              "model": "linear",
+              "lower": 49.573828212982036,
+              "upper": 51.5942312087398,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230580000,
+              "trainTo": 1767230580000,
+              "targetTs": 1767230640000,
+              "actual": 50.46759034022689,
+              "predicted": 49.70448999306187,
+              "naive": 49.66903429143131,
+              "model": "linear",
+              "lower": 48.69428849518299,
+              "upper": 50.71469149094075,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230940000,
+              "trainTo": 1767230940000,
+              "targetTs": 1767231000000,
+              "actual": 50.47255512811243,
+              "predicted": 49.612750285118814,
+              "naive": 49.96697425097227,
+              "model": "linear",
+              "lower": 48.5717847611755,
+              "upper": 50.65371580906213,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231300000,
+              "trainTo": 1767231300000,
+              "targetTs": 1767231360000,
+              "actual": 50.632711325585845,
+              "predicted": 49.455640809610486,
+              "naive": 49.455640809610486,
+              "model": "naive",
+              "lower": 48.32572665417361,
+              "upper": 50.585554965047365,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231660000,
+              "trainTo": 1767231660000,
+              "targetTs": 1767231720000,
+              "actual": 50.30224454216659,
+              "predicted": 49.949444155285896,
+              "naive": 49.61565891541541,
+              "model": "ar2",
+              "lower": 48.762733010007636,
+              "upper": 51.136155300564155,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767232020000,
+              "trainTo": 1767232020000,
+              "targetTs": 1767232080000,
+              "actual": 49.55040383823216,
+              "predicted": 49.998800552641676,
+              "naive": 50.21648950092494,
+              "model": "ar2",
+              "lower": 48.82173003666632,
+              "upper": 51.175871068617035,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            }
+          ],
+          "skipped": []
+        },
+        {
+          "horizon": 5,
+          "n": 7,
+          "mae": 0.5343427194391087,
+          "rmse": 0.5447097075527884,
+          "bias": 0.02965522511341082,
+          "naiveRmse": 0.7201547660774062,
+          "intervalN": 7,
+          "coverage": 100,
+          "samples": [
+            {
+              "originTs": 1767229860000,
+              "trainTo": 1767229860000,
+              "targetTs": 1767230160000,
+              "actual": 50.69456075541675,
+              "predicted": 50.20113552670432,
+              "naive": 49.9359517596662,
+              "model": "linear",
+              "lower": 48.83146698913183,
+              "upper": 51.57080406427681,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230220000,
+              "trainTo": 1767230220000,
+              "targetTs": 1767230520000,
+              "actual": 49.48406765982509,
+              "predicted": 50.01311314133517,
+              "naive": 50.7510502833873,
+              "model": "ar2",
+              "lower": 48.965415983270475,
+              "upper": 51.06081029939986,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230580000,
+              "trainTo": 1767230580000,
+              "targetTs": 1767230880000,
+              "actual": 49.305009972676636,
+              "predicted": 49.96023460062566,
+              "naive": 49.66903429143131,
+              "model": "ar2",
+              "lower": 48.78033017851101,
+              "upper": 51.140139022740314,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230940000,
+              "trainTo": 1767230940000,
+              "targetTs": 1767231240000,
+              "actual": 49.56363286562264,
+              "predicted": 49.9450301206681,
+              "naive": 49.96697425097227,
+              "model": "ar2",
+              "lower": 48.76512569855345,
+              "upper": 51.12493454278275,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231300000,
+              "trainTo": 1767231300000,
+              "targetTs": 1767231600000,
+              "actual": 49.53431062102318,
+              "predicted": 49.94263606245243,
+              "naive": 49.455640809610486,
+              "model": "ar2",
+              "lower": 48.667431839657915,
+              "upper": 51.21784028524694,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231660000,
+              "trainTo": 1767231660000,
+              "targetTs": 1767231960000,
+              "actual": 50.61924223937094,
+              "predicted": 49.952338580844135,
+              "naive": 49.61565891541541,
+              "model": "ar2",
+              "lower": 48.67713435804962,
+              "upper": 51.22754280363865,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767232020000,
+              "trainTo": 1767232020000,
+              "targetTs": 1767232320000,
+              "actual": 50.59207068756223,
+              "predicted": 49.98599334466152,
+              "naive": 50.21648950092494,
+              "model": "ar2",
+              "lower": 48.751231111627035,
+              "upper": 51.22075557769601,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            }
+          ],
+          "skipped": []
+        },
+        {
+          "horizon": 10,
+          "n": 7,
+          "mae": 0.3615799763185074,
+          "rmse": 0.3805713552497049,
+          "bias": 0.0009233999747948474,
+          "naiveRmse": 0.5202915513986356,
+          "intervalN": 7,
+          "coverage": 100,
+          "samples": [
+            {
+              "originTs": 1767229860000,
+              "trainTo": 1767229860000,
+              "targetTs": 1767230460000,
+              "actual": 49.56724261641502,
+              "predicted": 49.9359517596662,
+              "naive": 49.9359517596662,
+              "model": "naive",
+              "lower": 47.29076581240765,
+              "upper": 52.58113770692476,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230220000,
+              "trainTo": 1767230220000,
+              "targetTs": 1767230820000,
+              "actual": 50.12794845663011,
+              "predicted": 50.0169234326128,
+              "naive": 50.7510502833873,
+              "model": "ar2",
+              "lower": 48.297975002146416,
+              "upper": 51.73587186307918,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230580000,
+              "trainTo": 1767230580000,
+              "targetTs": 1767231180000,
+              "actual": 50.39288220256567,
+              "predicted": 49.960418855970524,
+              "naive": 49.66903429143131,
+              "model": "ar2",
+              "lower": 48.563764079623716,
+              "upper": 51.35707363231733,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230940000,
+              "trainTo": 1767230940000,
+              "targetTs": 1767231540000,
+              "actual": 49.55270286723972,
+              "predicted": 49.94645836379928,
+              "naive": 49.96697425097227,
+              "model": "ar2",
+              "lower": 48.31301147722256,
+              "upper": 51.579905250376,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231300000,
+              "trainTo": 1767231300000,
+              "targetTs": 1767231900000,
+              "actual": 50.23549369052053,
+              "predicted": 49.94249851972196,
+              "naive": 49.455640809610486,
+              "model": "ar2",
+              "lower": 48.54584374337515,
+              "upper": 51.339153296068766,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231660000,
+              "trainTo": 1767231660000,
+              "targetTs": 1767232260000,
+              "actual": 49.445886156708,
+              "predicted": 49.95218333392381,
+              "naive": 49.61565891541541,
+              "model": "ar2",
+              "lower": 48.53519095015973,
+              "upper": 51.369175717687895,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767232020000,
+              "trainTo": 1767232020000,
+              "targetTs": 1767232620000,
+              "actual": 50.411812021583316,
+              "predicted": 49.98599754579135,
+              "naive": 50.21648950092494,
+              "model": "ar2",
+              "lower": 48.4805302819427,
+              "upper": 51.49146480964,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            }
+          ],
+          "skipped": []
+        }
+      ],
+      "anomalies": null,
+      "rows": [
+        {
+          "ts": 1767225600000,
+          "y": 50.2102779917419,
+          "isAnomaly": false,
+          "index": 0
+        },
+        {
+          "ts": 1767225660000,
+          "y": 50.753547771275045,
+          "isAnomaly": false,
+          "index": 1
+        },
+        {
+          "ts": 1767225720000,
+          "y": 50.02980212457478,
+          "isAnomaly": false,
+          "index": 2
+        },
+        {
+          "ts": 1767225780000,
+          "y": 49.68657328523695,
+          "isAnomaly": false,
+          "index": 3
+        },
+        {
+          "ts": 1767225840000,
+          "y": 50.1814867105335,
+          "isAnomaly": false,
+          "index": 4
+        },
+        {
+          "ts": 1767225900000,
+          "y": 50.41357287839055,
+          "isAnomaly": false,
+          "index": 5
+        },
+        {
+          "ts": 1767225960000,
+          "y": 49.59160318076611,
+          "isAnomaly": false,
+          "index": 6
+        },
+        {
+          "ts": 1767226020000,
+          "y": 50.26462047211826,
+          "isAnomaly": false,
+          "index": 7
+        },
+        {
+          "ts": 1767226080000,
+          "y": 49.705439259111884,
+          "isAnomaly": false,
+          "index": 8
+        },
+        {
+          "ts": 1767226140000,
+          "y": 50.358003130182624,
+          "isAnomaly": false,
+          "index": 9
+        },
+        {
+          "ts": 1767226200000,
+          "y": 49.72487448826432,
+          "isAnomaly": false,
+          "index": 10
+        },
+        {
+          "ts": 1767226260000,
+          "y": 49.35284219123423,
+          "isAnomaly": false,
+          "index": 11
+        },
+        {
+          "ts": 1767226320000,
+          "y": 49.509497402235866,
+          "isAnomaly": false,
+          "index": 12
+        },
+        {
+          "ts": 1767226380000,
+          "y": 50.279281073063615,
+          "isAnomaly": false,
+          "index": 13
+        },
+        {
+          "ts": 1767226440000,
+          "y": 50.36995984204113,
+          "isAnomaly": false,
+          "index": 14
+        },
+        {
+          "ts": 1767226500000,
+          "y": 50.52966383844614,
+          "isAnomaly": false,
+          "index": 15
+        },
+        {
+          "ts": 1767226560000,
+          "y": 50.376175441220404,
+          "isAnomaly": false,
+          "index": 16
+        },
+        {
+          "ts": 1767226620000,
+          "y": 50.26894495896995,
+          "isAnomaly": false,
+          "index": 17
+        },
+        {
+          "ts": 1767226680000,
+          "y": 50.43340983837843,
+          "isAnomaly": false,
+          "index": 18
+        },
+        {
+          "ts": 1767226740000,
+          "y": 50.39130490720272,
+          "isAnomaly": false,
+          "index": 19
+        },
+        {
+          "ts": 1767226800000,
+          "y": 49.92284655570984,
+          "isAnomaly": false,
+          "index": 20
+        },
+        {
+          "ts": 1767226860000,
+          "y": 50.50093570165336,
+          "isAnomaly": false,
+          "index": 21
+        },
+        {
+          "ts": 1767226920000,
+          "y": 49.70431925058365,
+          "isAnomaly": false,
+          "index": 22
+        },
+        {
+          "ts": 1767226980000,
+          "y": 50.70930844023824,
+          "isAnomaly": false,
+          "index": 23
+        },
+        {
+          "ts": 1767227040000,
+          "y": 49.889708273485304,
+          "isAnomaly": false,
+          "index": 24
+        },
+        {
+          "ts": 1767227100000,
+          "y": 49.44257027730346,
+          "isAnomaly": false,
+          "index": 25
+        },
+        {
+          "ts": 1767227160000,
+          "y": 50.37718556299806,
+          "isAnomaly": false,
+          "index": 26
+        },
+        {
+          "ts": 1767227220000,
+          "y": 49.31799063161016,
+          "isAnomaly": false,
+          "index": 27
+        },
+        {
+          "ts": 1767227280000,
+          "y": 50.447531982138756,
+          "isAnomaly": false,
+          "index": 28
+        },
+        {
+          "ts": 1767227340000,
+          "y": 50.46261475943029,
+          "isAnomaly": false,
+          "index": 29
+        },
+        {
+          "ts": 1767227400000,
+          "y": 50.5102006316185,
+          "isAnomaly": false,
+          "index": 30
+        },
+        {
+          "ts": 1767227460000,
+          "y": 50.16389621719718,
+          "isAnomaly": false,
+          "index": 31
+        },
+        {
+          "ts": 1767227520000,
+          "y": 49.56563434451819,
+          "isAnomaly": false,
+          "index": 32
+        },
+        {
+          "ts": 1767227580000,
+          "y": 50.607829166576266,
+          "isAnomaly": false,
+          "index": 33
+        },
+        {
+          "ts": 1767227640000,
+          "y": 49.84722036682069,
+          "isAnomaly": false,
+          "index": 34
+        },
+        {
+          "ts": 1767227700000,
+          "y": 50.44572861120105,
+          "isAnomaly": false,
+          "index": 35
+        },
+        {
+          "ts": 1767227760000,
+          "y": 49.40551114268601,
+          "isAnomaly": false,
+          "index": 36
+        },
+        {
+          "ts": 1767227820000,
+          "y": 50.75829931385815,
+          "isAnomaly": false,
+          "index": 37
+        },
+        {
+          "ts": 1767227880000,
+          "y": 49.89537244923413,
+          "isAnomaly": false,
+          "index": 38
+        },
+        {
+          "ts": 1767227940000,
+          "y": 49.37444561310112,
+          "isAnomaly": false,
+          "index": 39
+        },
+        {
+          "ts": 1767228000000,
+          "y": 49.83001728504896,
+          "isAnomaly": false,
+          "index": 40
+        },
+        {
+          "ts": 1767228060000,
+          "y": 49.63128366842866,
+          "isAnomaly": false,
+          "index": 41
+        },
+        {
+          "ts": 1767228120000,
+          "y": 49.682095990329984,
+          "isAnomaly": false,
+          "index": 42
+        },
+        {
+          "ts": 1767228180000,
+          "y": 49.44230183586478,
+          "isAnomaly": false,
+          "index": 43
+        },
+        {
+          "ts": 1767228240000,
+          "y": 50.50075322762132,
+          "isAnomaly": false,
+          "index": 44
+        },
+        {
+          "ts": 1767228300000,
+          "y": 49.800987186655405,
+          "isAnomaly": false,
+          "index": 45
+        },
+        {
+          "ts": 1767228360000,
+          "y": 50.53328944630921,
+          "isAnomaly": false,
+          "index": 46
+        },
+        {
+          "ts": 1767228420000,
+          "y": 49.46621330901981,
+          "isAnomaly": false,
+          "index": 47
+        },
+        {
+          "ts": 1767228480000,
+          "y": 49.362361144647004,
+          "isAnomaly": false,
+          "index": 48
+        },
+        {
+          "ts": 1767228540000,
+          "y": 49.7044304240495,
+          "isAnomaly": false,
+          "index": 49
+        },
+        {
+          "ts": 1767228600000,
+          "y": 49.25259625986219,
+          "isAnomaly": false,
+          "index": 50
+        },
+        {
+          "ts": 1767228660000,
+          "y": 49.30519789867103,
+          "isAnomaly": false,
+          "index": 51
+        },
+        {
+          "ts": 1767228720000,
+          "y": 49.256689273938534,
+          "isAnomaly": false,
+          "index": 52
+        },
+        {
+          "ts": 1767228780000,
+          "y": 50.6785808287561,
+          "isAnomaly": false,
+          "index": 53
+        },
+        {
+          "ts": 1767228840000,
+          "y": 50.03366391807795,
+          "isAnomaly": false,
+          "index": 54
+        },
+        {
+          "ts": 1767228900000,
+          "y": 49.28662430383265,
+          "isAnomaly": false,
+          "index": 55
+        },
+        {
+          "ts": 1767228960000,
+          "y": 50.329734705761076,
+          "isAnomaly": false,
+          "index": 56
+        },
+        {
+          "ts": 1767229020000,
+          "y": 50.2679508395493,
+          "isAnomaly": false,
+          "index": 57
+        },
+        {
+          "ts": 1767229080000,
+          "y": 49.25931461974979,
+          "isAnomaly": false,
+          "index": 58
+        },
+        {
+          "ts": 1767229140000,
+          "y": 50.0837245631963,
+          "isAnomaly": false,
+          "index": 59
+        },
+        {
+          "ts": 1767229200000,
+          "y": 50.62534141726792,
+          "isAnomaly": false,
+          "index": 60
+        },
+        {
+          "ts": 1767229260000,
+          "y": 49.46336151473224,
+          "isAnomaly": false,
+          "index": 61
+        },
+        {
+          "ts": 1767229320000,
+          "y": 49.41225711405277,
+          "isAnomaly": false,
+          "index": 62
+        },
+        {
+          "ts": 1767229380000,
+          "y": 50.66398593224585,
+          "isAnomaly": false,
+          "index": 63
+        },
+        {
+          "ts": 1767229440000,
+          "y": 49.61563647277653,
+          "isAnomaly": false,
+          "index": 64
+        },
+        {
+          "ts": 1767229500000,
+          "y": 50.779447904601696,
+          "isAnomaly": false,
+          "index": 65
+        },
+        {
+          "ts": 1767229560000,
+          "y": 49.30706653892994,
+          "isAnomaly": false,
+          "index": 66
+        },
+        {
+          "ts": 1767229620000,
+          "y": 50.52143199145794,
+          "isAnomaly": false,
+          "index": 67
+        },
+        {
+          "ts": 1767229680000,
+          "y": 49.89627018161118,
+          "isAnomaly": false,
+          "index": 68
+        },
+        {
+          "ts": 1767229740000,
+          "y": 50.0803738437593,
+          "isAnomaly": false,
+          "index": 69
+        },
+        {
+          "ts": 1767229800000,
+          "y": 50.64760034866631,
+          "isAnomaly": false,
+          "index": 70
+        },
+        {
+          "ts": 1767229860000,
+          "y": 49.9359517596662,
+          "isAnomaly": false,
+          "index": 71
+        },
+        {
+          "ts": 1767229920000,
+          "y": 50.059292792528865,
+          "isAnomaly": false,
+          "index": 72
+        },
+        {
+          "ts": 1767229980000,
+          "y": 50.332385706529024,
+          "isAnomaly": false,
+          "index": 73
+        },
+        {
+          "ts": 1767230040000,
+          "y": 50.51610355488956,
+          "isAnomaly": false,
+          "index": 74
+        },
+        {
+          "ts": 1767230100000,
+          "y": 50.17282635346055,
+          "isAnomaly": false,
+          "index": 75
+        },
+        {
+          "ts": 1767230160000,
+          "y": 50.69456075541675,
+          "isAnomaly": false,
+          "index": 76
+        },
+        {
+          "ts": 1767230220000,
+          "y": 50.7510502833873,
+          "isAnomaly": false,
+          "index": 77
+        },
+        {
+          "ts": 1767230280000,
+          "y": 50.06227428913117,
+          "isAnomaly": false,
+          "index": 78
+        },
+        {
+          "ts": 1767230340000,
+          "y": 49.862594252452254,
+          "isAnomaly": false,
+          "index": 79
+        },
+        {
+          "ts": 1767230400000,
+          "y": 49.404996279627085,
+          "isAnomaly": false,
+          "index": 80
+        },
+        {
+          "ts": 1767230460000,
+          "y": 49.56724261641502,
+          "isAnomaly": false,
+          "index": 81
+        },
+        {
+          "ts": 1767230520000,
+          "y": 49.48406765982509,
+          "isAnomaly": false,
+          "index": 82
+        },
+        {
+          "ts": 1767230580000,
+          "y": 49.66903429143131,
+          "isAnomaly": false,
+          "index": 83
+        },
+        {
+          "ts": 1767230640000,
+          "y": 50.46759034022689,
+          "isAnomaly": false,
+          "index": 84
+        },
+        {
+          "ts": 1767230700000,
+          "y": 50.00369898043573,
+          "isAnomaly": false,
+          "index": 85
+        },
+        {
+          "ts": 1767230760000,
+          "y": 49.851929222419855,
+          "isAnomaly": false,
+          "index": 86
+        },
+        {
+          "ts": 1767230820000,
+          "y": 50.12794845663011,
+          "isAnomaly": false,
+          "index": 87
+        },
+        {
+          "ts": 1767230880000,
+          "y": 49.305009972676636,
+          "isAnomaly": false,
+          "index": 88
+        },
+        {
+          "ts": 1767230940000,
+          "y": 49.96697425097227,
+          "isAnomaly": false,
+          "index": 89
+        },
+        {
+          "ts": 1767231000000,
+          "y": 50.47255512811243,
+          "isAnomaly": false,
+          "index": 90
+        },
+        {
+          "ts": 1767231060000,
+          "y": 50.282686626166104,
+          "isAnomaly": false,
+          "index": 91
+        },
+        {
+          "ts": 1767231120000,
+          "y": 49.50676300600171,
+          "isAnomaly": false,
+          "index": 92
+        },
+        {
+          "ts": 1767231180000,
+          "y": 50.39288220256567,
+          "isAnomaly": false,
+          "index": 93
+        },
+        {
+          "ts": 1767231240000,
+          "y": 49.56363286562264,
+          "isAnomaly": false,
+          "index": 94
+        },
+        {
+          "ts": 1767231300000,
+          "y": 49.455640809610486,
+          "isAnomaly": false,
+          "index": 95
+        },
+        {
+          "ts": 1767231360000,
+          "y": 50.632711325585845,
+          "isAnomaly": false,
+          "index": 96
+        },
+        {
+          "ts": 1767231420000,
+          "y": 49.733461207151414,
+          "isAnomaly": false,
+          "index": 97
+        },
+        {
+          "ts": 1767231480000,
+          "y": 50.62848267480731,
+          "isAnomaly": false,
+          "index": 98
+        },
+        {
+          "ts": 1767231540000,
+          "y": 49.55270286723972,
+          "isAnomaly": false,
+          "index": 99
+        },
+        {
+          "ts": 1767231600000,
+          "y": 49.53431062102318,
+          "isAnomaly": false,
+          "index": 100
+        },
+        {
+          "ts": 1767231660000,
+          "y": 49.61565891541541,
+          "isAnomaly": false,
+          "index": 101
+        },
+        {
+          "ts": 1767231720000,
+          "y": 50.30224454216659,
+          "isAnomaly": false,
+          "index": 102
+        },
+        {
+          "ts": 1767231780000,
+          "y": 49.951215057447556,
+          "isAnomaly": false,
+          "index": 103
+        },
+        {
+          "ts": 1767231840000,
+          "y": 49.735176822915676,
+          "isAnomaly": false,
+          "index": 104
+        },
+        {
+          "ts": 1767231900000,
+          "y": 50.23549369052053,
+          "isAnomaly": false,
+          "index": 105
+        },
+        {
+          "ts": 1767231960000,
+          "y": 50.61924223937094,
+          "isAnomaly": false,
+          "index": 106
+        },
+        {
+          "ts": 1767232020000,
+          "y": 50.21648950092494,
+          "isAnomaly": false,
+          "index": 107
+        },
+        {
+          "ts": 1767232080000,
+          "y": 49.55040383823216,
+          "isAnomaly": false,
+          "index": 108
+        },
+        {
+          "ts": 1767232140000,
+          "y": 49.20876422412694,
+          "isAnomaly": false,
+          "index": 109
+        },
+        {
+          "ts": 1767232200000,
+          "y": 49.38089945539832,
+          "isAnomaly": false,
+          "index": 110
+        },
+        {
+          "ts": 1767232260000,
+          "y": 49.445886156708,
+          "isAnomaly": false,
+          "index": 111
+        },
+        {
+          "ts": 1767232320000,
+          "y": 50.59207068756223,
+          "isAnomaly": false,
+          "index": 112
+        },
+        {
+          "ts": 1767232380000,
+          "y": 50.32329813726246,
+          "isAnomaly": false,
+          "index": 113
+        },
+        {
+          "ts": 1767232440000,
+          "y": 50.24446836486459,
+          "isAnomaly": false,
+          "index": 114
+        },
+        {
+          "ts": 1767232500000,
+          "y": 49.7705828178674,
+          "isAnomaly": false,
+          "index": 115
+        },
+        {
+          "ts": 1767232560000,
+          "y": 49.35980082713068,
+          "isAnomaly": false,
+          "index": 116
+        },
+        {
+          "ts": 1767232620000,
+          "y": 50.411812021583316,
+          "isAnomaly": false,
+          "index": 117
+        },
+        {
+          "ts": 1767232680000,
+          "y": 50.498698922619226,
+          "isAnomaly": false,
+          "index": 118
+        },
+        {
+          "ts": 1767232740000,
+          "y": 50.33083893097937,
+          "isAnomaly": false,
+          "index": 119
+        }
+      ]
+    },
+    {
+      "id": "drift",
+      "name": "Поступовий дрейф",
+      "seed": 91002,
+      "trainPoints": 72,
+      "testPoints": 48,
+      "unit": "ум. од.",
+      "byHorizon": [
+        {
+          "horizon": 1,
+          "n": 7,
+          "mae": 0.21903299450325267,
+          "rmse": 0.25205111638281813,
+          "bias": -0.07798680347613132,
+          "naiveRmse": 0.33223810755828936,
+          "intervalN": 7,
+          "coverage": 100,
+          "samples": [
+            {
+              "originTs": 1767229860000,
+              "trainTo": 1767229860000,
+              "targetTs": 1767229920000,
+              "actual": 52.72876499921084,
+              "predicted": 53.06584350662679,
+              "naive": 52.99157792627812,
+              "model": "linear",
+              "lower": 52.703251810144636,
+              "upper": 53.42843520310895,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230220000,
+              "trainTo": 1767230220000,
+              "targetTs": 1767230280000,
+              "actual": 54.280139391124244,
+              "predicted": 53.81120409554362,
+              "naive": 53.84175767213106,
+              "model": "ar2",
+              "lower": 53.315985364336115,
+              "upper": 54.30642282675113,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230580000,
+              "trainTo": 1767230580000,
+              "targetTs": 1767230640000,
+              "actual": 55.22789004549384,
+              "predicted": 55.12671661132947,
+              "naive": 55.248750320822,
+              "model": "linear",
+              "lower": 54.734603311337544,
+              "upper": 55.5188299113214,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230940000,
+              "trainTo": 1767230940000,
+              "targetTs": 1767231000000,
+              "actual": 56.454718200117355,
+              "predicted": 56.265927010197196,
+              "naive": 56.148157543092964,
+              "model": "linear",
+              "lower": 55.87482790728287,
+              "upper": 56.65702611311152,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231300000,
+              "trainTo": 1767231300000,
+              "targetTs": 1767231360000,
+              "actual": 57.32936991840601,
+              "predicted": 57.21551176105065,
+              "naive": 56.80195944622159,
+              "model": "linear",
+              "lower": 56.813599343804235,
+              "upper": 57.617424178297064,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231660000,
+              "trainTo": 1767231660000,
+              "targetTs": 1767231720000,
+              "actual": 58.567431339919565,
+              "predicted": 58.40062012401223,
+              "naive": 58.23357254654169,
+              "model": "linear",
+              "lower": 58.0085068240203,
+              "upper": 58.792733424004155,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767232020000,
+              "trainTo": 1767232020000,
+              "targetTs": 1767232080000,
+              "actual": 59.29839451700449,
+              "predicted": 59.45497767818346,
+              "naive": 59.13290171653032,
+              "model": "linear",
+              "lower": 59.062864378191534,
+              "upper": 59.84709097817539,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            }
+          ],
+          "skipped": []
+        },
+        {
+          "horizon": 5,
+          "n": 7,
+          "mae": 0.14608578991676882,
+          "rmse": 0.20375164678224994,
+          "bias": 0.0980956720435527,
+          "naiveRmse": 0.809709947535896,
+          "intervalN": 7,
+          "coverage": 85.71428571428571,
+          "samples": [
+            {
+              "originTs": 1767229860000,
+              "trainTo": 1767229860000,
+              "targetTs": 1767230160000,
+              "actual": 53.40520877957344,
+              "predicted": 53.817085021661924,
+              "naive": 52.99157792627812,
+              "model": "linear",
+              "lower": 53.4653449430985,
+              "upper": 54.16882510022535,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230220000,
+              "trainTo": 1767230220000,
+              "targetTs": 1767230520000,
+              "actual": 54.58653369113803,
+              "predicted": 54.607983018330785,
+              "naive": 53.84175767213106,
+              "model": "linear",
+              "lower": 54.23843285255474,
+              "upper": 54.97753318410683,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230580000,
+              "trainTo": 1767230580000,
+              "targetTs": 1767230880000,
+              "actual": 55.7520323766768,
+              "predicted": 55.84700292786364,
+              "naive": 55.248750320822,
+              "model": "linear",
+              "lower": 55.48203515542782,
+              "upper": 56.21197070029946,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230940000,
+              "trainTo": 1767230940000,
+              "targetTs": 1767231240000,
+              "actual": 57.11295835331082,
+              "predicted": 57.009780095356575,
+              "naive": 56.148157543092964,
+              "model": "linear",
+              "lower": 56.64474925575116,
+              "upper": 57.37481093496199,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231300000,
+              "trainTo": 1767231300000,
+              "targetTs": 1767231600000,
+              "actual": 57.95793826863169,
+              "predicted": 57.893151114029685,
+              "naive": 56.80195944622159,
+              "model": "linear",
+              "lower": 57.301247917286126,
+              "upper": 58.48505431077324,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231660000,
+              "trainTo": 1767231660000,
+              "targetTs": 1767231960000,
+              "actual": 59.121983962208034,
+              "predicted": 59.13786137246471,
+              "naive": 58.23357254654169,
+              "model": "linear",
+              "lower": 58.70964281238176,
+              "upper": 59.566079932547666,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767232020000,
+              "trainTo": 1767232020000,
+              "targetTs": 1767232320000,
+              "actual": 59.87716932982206,
+              "predicted": 60.18763091595843,
+              "naive": 59.13290171653032,
+              "model": "linear",
+              "lower": 59.7722607436809,
+              "upper": 60.603001088235956,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            }
+          ],
+          "skipped": []
+        },
+        {
+          "horizon": 10,
+          "n": 7,
+          "mae": 0.17068593573405114,
+          "rmse": 0.18189112102770966,
+          "bias": -0.04383932389742081,
+          "naiveRmse": 1.8365326875465267,
+          "intervalN": 7,
+          "coverage": 100,
+          "samples": [
+            {
+              "originTs": 1767229860000,
+              "trainTo": 1767229860000,
+              "targetTs": 1767230460000,
+              "actual": 54.497372790277005,
+              "predicted": 54.756136915455855,
+              "naive": 52.99157792627812,
+              "model": "linear",
+              "lower": 54.359769298892274,
+              "upper": 55.152504532019435,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230220000,
+              "trainTo": 1767230220000,
+              "targetTs": 1767230820000,
+              "actual": 55.599484017044304,
+              "predicted": 55.44594677769852,
+              "naive": 53.84175767213106,
+              "model": "linear",
+              "lower": 54.966869259357445,
+              "upper": 55.9250242960396,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230580000,
+              "trainTo": 1767230580000,
+              "targetTs": 1767231180000,
+              "actual": 56.66129673108458,
+              "predicted": 56.74736082353136,
+              "naive": 55.248750320822,
+              "model": "linear",
+              "lower": 56.367776018215665,
+              "upper": 57.126945628847054,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230940000,
+              "trainTo": 1767230940000,
+              "targetTs": 1767231540000,
+              "actual": 57.84046152800322,
+              "predicted": 57.9395964518058,
+              "naive": 56.148157543092964,
+              "model": "linear",
+              "lower": 57.5600116464901,
+              "upper": 58.31918125712149,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231300000,
+              "trainTo": 1767231300000,
+              "targetTs": 1767231900000,
+              "actual": 58.92615214675665,
+              "predicted": 58.74020030525347,
+              "naive": 56.80195944622159,
+              "model": "linear",
+              "lower": 58.15865880776634,
+              "upper": 59.3217418027406,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231660000,
+              "trainTo": 1767231660000,
+              "targetTs": 1767232260000,
+              "actual": 60.21691540703178,
+              "predicted": 60.05941293303032,
+              "naive": 58.23357254654169,
+              "model": "linear",
+              "lower": 59.47787143554319,
+              "upper": 60.64095443051745,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767232020000,
+              "trainTo": 1767232020000,
+              "targetTs": 1767232620000,
+              "actual": 61.35729431703687,
+              "predicted": 61.10344746317713,
+              "naive": 59.13290171653032,
+              "model": "linear",
+              "lower": 60.52190596569,
+              "upper": 61.68498896066426,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            }
+          ],
+          "skipped": []
+        }
+      ],
+      "anomalies": null,
+      "rows": [
+        {
+          "ts": 1767225600000,
+          "y": 40.08414661124348,
+          "isAnomaly": false,
+          "index": 0
+        },
+        {
+          "ts": 1767225660000,
+          "y": 40.47150249823928,
+          "isAnomaly": false,
+          "index": 1
+        },
+        {
+          "ts": 1767225720000,
+          "y": 40.1614136376977,
+          "isAnomaly": false,
+          "index": 2
+        },
+        {
+          "ts": 1767225780000,
+          "y": 40.37022624850273,
+          "isAnomaly": false,
+          "index": 3
+        },
+        {
+          "ts": 1767225840000,
+          "y": 41.000630411505696,
+          "isAnomaly": false,
+          "index": 4
+        },
+        {
+          "ts": 1767225900000,
+          "y": 41.136453590542075,
+          "isAnomaly": false,
+          "index": 5
+        },
+        {
+          "ts": 1767225960000,
+          "y": 41.367965115755794,
+          "isAnomaly": false,
+          "index": 6
+        },
+        {
+          "ts": 1767226020000,
+          "y": 41.50031890019774,
+          "isAnomaly": false,
+          "index": 7
+        },
+        {
+          "ts": 1767226080000,
+          "y": 41.399682952612636,
+          "isAnomaly": false,
+          "index": 8
+        },
+        {
+          "ts": 1767226140000,
+          "y": 41.47517893433571,
+          "isAnomaly": false,
+          "index": 9
+        },
+        {
+          "ts": 1767226200000,
+          "y": 41.81169700309634,
+          "isAnomaly": false,
+          "index": 10
+        },
+        {
+          "ts": 1767226260000,
+          "y": 42.13507597014308,
+          "isAnomaly": false,
+          "index": 11
+        },
+        {
+          "ts": 1767226320000,
+          "y": 42.22006942629814,
+          "isAnomaly": false,
+          "index": 12
+        },
+        {
+          "ts": 1767226380000,
+          "y": 42.07122004568577,
+          "isAnomaly": false,
+          "index": 13
+        },
+        {
+          "ts": 1767226440000,
+          "y": 42.672826264798644,
+          "isAnomaly": false,
+          "index": 14
+        },
+        {
+          "ts": 1767226500000,
+          "y": 42.75820288345218,
+          "isAnomaly": false,
+          "index": 15
+        },
+        {
+          "ts": 1767226560000,
+          "y": 42.815382073223596,
+          "isAnomaly": false,
+          "index": 16
+        },
+        {
+          "ts": 1767226620000,
+          "y": 42.8962375921011,
+          "isAnomaly": false,
+          "index": 17
+        },
+        {
+          "ts": 1767226680000,
+          "y": 43.43000530838967,
+          "isAnomaly": false,
+          "index": 18
+        },
+        {
+          "ts": 1767226740000,
+          "y": 43.38462245374918,
+          "isAnomaly": false,
+          "index": 19
+        },
+        {
+          "ts": 1767226800000,
+          "y": 43.4281768886745,
+          "isAnomaly": false,
+          "index": 20
+        },
+        {
+          "ts": 1767226860000,
+          "y": 43.92263106733561,
+          "isAnomaly": false,
+          "index": 21
+        },
+        {
+          "ts": 1767226920000,
+          "y": 44.02673941627145,
+          "isAnomaly": false,
+          "index": 22
+        },
+        {
+          "ts": 1767226980000,
+          "y": 44.44062964498997,
+          "isAnomaly": false,
+          "index": 23
+        },
+        {
+          "ts": 1767227040000,
+          "y": 44.06102346301079,
+          "isAnomaly": false,
+          "index": 24
+        },
+        {
+          "ts": 1767227100000,
+          "y": 44.32311031267047,
+          "isAnomaly": false,
+          "index": 25
+        },
+        {
+          "ts": 1767227160000,
+          "y": 44.467010075300934,
+          "isAnomaly": false,
+          "index": 26
+        },
+        {
+          "ts": 1767227220000,
+          "y": 44.92577532336116,
+          "isAnomaly": false,
+          "index": 27
+        },
+        {
+          "ts": 1767227280000,
+          "y": 45.15434349268675,
+          "isAnomaly": false,
+          "index": 28
+        },
+        {
+          "ts": 1767227340000,
+          "y": 45.28717325925827,
+          "isAnomaly": false,
+          "index": 29
+        },
+        {
+          "ts": 1767227400000,
+          "y": 45.22653571903705,
+          "isAnomaly": false,
+          "index": 30
+        },
+        {
+          "ts": 1767227460000,
+          "y": 45.75705673292279,
+          "isAnomaly": false,
+          "index": 31
+        },
+        {
+          "ts": 1767227520000,
+          "y": 45.59777966201305,
+          "isAnomaly": false,
+          "index": 32
+        },
+        {
+          "ts": 1767227580000,
+          "y": 46.110855886936186,
+          "isAnomaly": false,
+          "index": 33
+        },
+        {
+          "ts": 1767227640000,
+          "y": 45.90111460477114,
+          "isAnomaly": false,
+          "index": 34
+        },
+        {
+          "ts": 1767227700000,
+          "y": 46.56170656681061,
+          "isAnomaly": false,
+          "index": 35
+        },
+        {
+          "ts": 1767227760000,
+          "y": 46.25970487073064,
+          "isAnomaly": false,
+          "index": 36
+        },
+        {
+          "ts": 1767227820000,
+          "y": 46.97569777846336,
+          "isAnomaly": false,
+          "index": 37
+        },
+        {
+          "ts": 1767227880000,
+          "y": 46.57924816220999,
+          "isAnomaly": false,
+          "index": 38
+        },
+        {
+          "ts": 1767227940000,
+          "y": 47.05418842539191,
+          "isAnomaly": false,
+          "index": 39
+        },
+        {
+          "ts": 1767228000000,
+          "y": 47.00168688431383,
+          "isAnomaly": false,
+          "index": 40
+        },
+        {
+          "ts": 1767228060000,
+          "y": 47.22000158622861,
+          "isAnomaly": false,
+          "index": 41
+        },
+        {
+          "ts": 1767228120000,
+          "y": 47.808513585925105,
+          "isAnomaly": false,
+          "index": 42
+        },
+        {
+          "ts": 1767228180000,
+          "y": 47.652487391084435,
+          "isAnomaly": false,
+          "index": 43
+        },
+        {
+          "ts": 1767228240000,
+          "y": 48.08080183967948,
+          "isAnomaly": false,
+          "index": 44
+        },
+        {
+          "ts": 1767228300000,
+          "y": 48.358935529738666,
+          "isAnomaly": false,
+          "index": 45
+        },
+        {
+          "ts": 1767228360000,
+          "y": 48.41003373086453,
+          "isAnomaly": false,
+          "index": 46
+        },
+        {
+          "ts": 1767228420000,
+          "y": 48.48523158043623,
+          "isAnomaly": false,
+          "index": 47
+        },
+        {
+          "ts": 1767228480000,
+          "y": 48.89196606129408,
+          "isAnomaly": false,
+          "index": 48
+        },
+        {
+          "ts": 1767228540000,
+          "y": 48.569887587279084,
+          "isAnomaly": false,
+          "index": 49
+        },
+        {
+          "ts": 1767228600000,
+          "y": 48.75620816752315,
+          "isAnomaly": false,
+          "index": 50
+        },
+        {
+          "ts": 1767228660000,
+          "y": 49.1660500395298,
+          "isAnomaly": false,
+          "index": 51
+        },
+        {
+          "ts": 1767228720000,
+          "y": 49.27873949512839,
+          "isAnomaly": false,
+          "index": 52
+        },
+        {
+          "ts": 1767228780000,
+          "y": 49.77817324772477,
+          "isAnomaly": false,
+          "index": 53
+        },
+        {
+          "ts": 1767228840000,
+          "y": 49.66722643002868,
+          "isAnomaly": false,
+          "index": 54
+        },
+        {
+          "ts": 1767228900000,
+          "y": 50.04767402619123,
+          "isAnomaly": false,
+          "index": 55
+        },
+        {
+          "ts": 1767228960000,
+          "y": 50.17223130360246,
+          "isAnomaly": false,
+          "index": 56
+        },
+        {
+          "ts": 1767229020000,
+          "y": 50.11691856846213,
+          "isAnomaly": false,
+          "index": 57
+        },
+        {
+          "ts": 1767229080000,
+          "y": 50.62243841588497,
+          "isAnomaly": false,
+          "index": 58
+        },
+        {
+          "ts": 1767229140000,
+          "y": 50.39878486052155,
+          "isAnomaly": false,
+          "index": 59
+        },
+        {
+          "ts": 1767229200000,
+          "y": 51.04667952135205,
+          "isAnomaly": false,
+          "index": 60
+        },
+        {
+          "ts": 1767229260000,
+          "y": 50.75560287624598,
+          "isAnomaly": false,
+          "index": 61
+        },
+        {
+          "ts": 1767229320000,
+          "y": 51.25541192352772,
+          "isAnomaly": false,
+          "index": 62
+        },
+        {
+          "ts": 1767229380000,
+          "y": 51.41995281755925,
+          "isAnomaly": false,
+          "index": 63
+        },
+        {
+          "ts": 1767229440000,
+          "y": 51.62348735973239,
+          "isAnomaly": false,
+          "index": 64
+        },
+        {
+          "ts": 1767229500000,
+          "y": 51.566364714056256,
+          "isAnomaly": false,
+          "index": 65
+        },
+        {
+          "ts": 1767229560000,
+          "y": 51.92186227291822,
+          "isAnomaly": false,
+          "index": 66
+        },
+        {
+          "ts": 1767229620000,
+          "y": 52.120932222008705,
+          "isAnomaly": false,
+          "index": 67
+        },
+        {
+          "ts": 1767229680000,
+          "y": 52.348926580101256,
+          "isAnomaly": false,
+          "index": 68
+        },
+        {
+          "ts": 1767229740000,
+          "y": 52.60129206046462,
+          "isAnomaly": false,
+          "index": 69
+        },
+        {
+          "ts": 1767229800000,
+          "y": 52.54882117211819,
+          "isAnomaly": false,
+          "index": 70
+        },
+        {
+          "ts": 1767229860000,
+          "y": 52.99157792627812,
+          "isAnomaly": false,
+          "index": 71
+        },
+        {
+          "ts": 1767229920000,
+          "y": 52.72876499921084,
+          "isAnomaly": false,
+          "index": 72
+        },
+        {
+          "ts": 1767229980000,
+          "y": 52.995935526043176,
+          "isAnomaly": false,
+          "index": 73
+        },
+        {
+          "ts": 1767230040000,
+          "y": 53.1728298535943,
+          "isAnomaly": false,
+          "index": 74
+        },
+        {
+          "ts": 1767230100000,
+          "y": 53.66605203926563,
+          "isAnomaly": false,
+          "index": 75
+        },
+        {
+          "ts": 1767230160000,
+          "y": 53.40520877957344,
+          "isAnomaly": false,
+          "index": 76
+        },
+        {
+          "ts": 1767230220000,
+          "y": 53.84175767213106,
+          "isAnomaly": false,
+          "index": 77
+        },
+        {
+          "ts": 1767230280000,
+          "y": 54.280139391124244,
+          "isAnomaly": false,
+          "index": 78
+        },
+        {
+          "ts": 1767230340000,
+          "y": 54.023104220777746,
+          "isAnomaly": false,
+          "index": 79
+        },
+        {
+          "ts": 1767230400000,
+          "y": 54.60066399618983,
+          "isAnomaly": false,
+          "index": 80
+        },
+        {
+          "ts": 1767230460000,
+          "y": 54.497372790277005,
+          "isAnomaly": false,
+          "index": 81
+        },
+        {
+          "ts": 1767230520000,
+          "y": 54.58653369113803,
+          "isAnomaly": false,
+          "index": 82
+        },
+        {
+          "ts": 1767230580000,
+          "y": 55.248750320822,
+          "isAnomaly": false,
+          "index": 83
+        },
+        {
+          "ts": 1767230640000,
+          "y": 55.22789004549384,
+          "isAnomaly": false,
+          "index": 84
+        },
+        {
+          "ts": 1767230700000,
+          "y": 55.587435925006865,
+          "isAnomaly": false,
+          "index": 85
+        },
+        {
+          "ts": 1767230760000,
+          "y": 55.326414605528115,
+          "isAnomaly": false,
+          "index": 86
+        },
+        {
+          "ts": 1767230820000,
+          "y": 55.599484017044304,
+          "isAnomaly": false,
+          "index": 87
+        },
+        {
+          "ts": 1767230880000,
+          "y": 55.7520323766768,
+          "isAnomaly": false,
+          "index": 88
+        },
+        {
+          "ts": 1767230940000,
+          "y": 56.148157543092964,
+          "isAnomaly": false,
+          "index": 89
+        },
+        {
+          "ts": 1767231000000,
+          "y": 56.454718200117355,
+          "isAnomaly": false,
+          "index": 90
+        },
+        {
+          "ts": 1767231060000,
+          "y": 56.49549602329731,
+          "isAnomaly": false,
+          "index": 91
+        },
+        {
+          "ts": 1767231120000,
+          "y": 56.30728611022234,
+          "isAnomaly": false,
+          "index": 92
+        },
+        {
+          "ts": 1767231180000,
+          "y": 56.66129673108458,
+          "isAnomaly": false,
+          "index": 93
+        },
+        {
+          "ts": 1767231240000,
+          "y": 57.11295835331082,
+          "isAnomaly": false,
+          "index": 94
+        },
+        {
+          "ts": 1767231300000,
+          "y": 56.80195944622159,
+          "isAnomaly": false,
+          "index": 95
+        },
+        {
+          "ts": 1767231360000,
+          "y": 57.32936991840601,
+          "isAnomaly": false,
+          "index": 96
+        },
+        {
+          "ts": 1767231420000,
+          "y": 57.700376724153756,
+          "isAnomaly": false,
+          "index": 97
+        },
+        {
+          "ts": 1767231480000,
+          "y": 57.62219714447856,
+          "isAnomaly": false,
+          "index": 98
+        },
+        {
+          "ts": 1767231540000,
+          "y": 57.84046152800322,
+          "isAnomaly": false,
+          "index": 99
+        },
+        {
+          "ts": 1767231600000,
+          "y": 57.95793826863169,
+          "isAnomaly": false,
+          "index": 100
+        },
+        {
+          "ts": 1767231660000,
+          "y": 58.23357254654169,
+          "isAnomaly": false,
+          "index": 101
+        },
+        {
+          "ts": 1767231720000,
+          "y": 58.567431339919565,
+          "isAnomaly": false,
+          "index": 102
+        },
+        {
+          "ts": 1767231780000,
+          "y": 58.506411228626966,
+          "isAnomaly": false,
+          "index": 103
+        },
+        {
+          "ts": 1767231840000,
+          "y": 58.54713560149074,
+          "isAnomaly": false,
+          "index": 104
+        },
+        {
+          "ts": 1767231900000,
+          "y": 58.92615214675665,
+          "isAnomaly": false,
+          "index": 105
+        },
+        {
+          "ts": 1767231960000,
+          "y": 59.121983962208034,
+          "isAnomaly": false,
+          "index": 106
+        },
+        {
+          "ts": 1767232020000,
+          "y": 59.13290171653032,
+          "isAnomaly": false,
+          "index": 107
+        },
+        {
+          "ts": 1767232080000,
+          "y": 59.29839451700449,
+          "isAnomaly": false,
+          "index": 108
+        },
+        {
+          "ts": 1767232140000,
+          "y": 59.76973280012608,
+          "isAnomaly": false,
+          "index": 109
+        },
+        {
+          "ts": 1767232200000,
+          "y": 60.032683012187476,
+          "isAnomaly": false,
+          "index": 110
+        },
+        {
+          "ts": 1767232260000,
+          "y": 60.21691540703178,
+          "isAnomaly": false,
+          "index": 111
+        },
+        {
+          "ts": 1767232320000,
+          "y": 59.87716932982206,
+          "isAnomaly": false,
+          "index": 112
+        },
+        {
+          "ts": 1767232380000,
+          "y": 60.41964209005237,
+          "isAnomaly": false,
+          "index": 113
+        },
+        {
+          "ts": 1767232440000,
+          "y": 60.464689867347474,
+          "isAnomaly": false,
+          "index": 114
+        },
+        {
+          "ts": 1767232500000,
+          "y": 60.80528118118644,
+          "isAnomaly": false,
+          "index": 115
+        },
+        {
+          "ts": 1767232560000,
+          "y": 60.78786470860243,
+          "isAnomaly": false,
+          "index": 116
+        },
+        {
+          "ts": 1767232620000,
+          "y": 61.35729431703687,
+          "isAnomaly": false,
+          "index": 117
+        },
+        {
+          "ts": 1767232680000,
+          "y": 61.37295463830232,
+          "isAnomaly": false,
+          "index": 118
+        },
+        {
+          "ts": 1767232740000,
+          "y": 61.72362735331059,
+          "isAnomaly": false,
+          "index": 119
+        }
+      ]
+    },
+    {
+      "id": "cycles",
+      "name": "Коливання",
+      "seed": 91003,
+      "trainPoints": 72,
+      "testPoints": 48,
+      "unit": "ум. од.",
+      "byHorizon": [
+        {
+          "horizon": 1,
+          "n": 7,
+          "mae": 0.12670285337522,
+          "rmse": 0.18936975051724778,
+          "bias": -0.06588757103942251,
+          "naiveRmse": 1.599005387357052,
+          "intervalN": 7,
+          "coverage": 100,
+          "samples": [
+            {
+              "originTs": 1767229860000,
+              "trainTo": 1767229860000,
+              "targetTs": 1767229920000,
+              "actual": 54.07183117560039,
+              "predicted": 53.86878482694367,
+              "naive": 52.1714223831707,
+              "model": "ar2",
+              "lower": 46.44033578553357,
+              "upper": 61.297233868353764,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230220000,
+              "trainTo": 1767230220000,
+              "targetTs": 1767230280000,
+              "actual": 47.93513946423295,
+              "predicted": 47.9471105969377,
+              "naive": 50.174016245491785,
+              "model": "ar2",
+              "lower": 40.243620810120525,
+              "upper": 55.65060038375487,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230580000,
+              "trainTo": 1767230580000,
+              "targetTs": 1767230640000,
+              "actual": 50.01984868410974,
+              "predicted": 50.20790943236626,
+              "naive": 48.04094618955616,
+              "model": "ar2",
+              "lower": 42.60423337862655,
+              "upper": 57.81158548610596,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230940000,
+              "trainTo": 1767230940000,
+              "targetTs": 1767231000000,
+              "actual": 52.17234460486113,
+              "predicted": 52.12718461931447,
+              "naive": 53.818301147734026,
+              "model": "ar2",
+              "lower": 44.91089536370836,
+              "upper": 59.343473874920576,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231300000,
+              "trainTo": 1767231300000,
+              "targetTs": 1767231360000,
+              "actual": 46.29281568211574,
+              "predicted": 45.87813564737863,
+              "naive": 45.040648279941536,
+              "model": "ar2",
+              "lower": 38.85935805737383,
+              "upper": 52.89691323738342,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231660000,
+              "trainTo": 1767231660000,
+              "targetTs": 1767231720000,
+              "actual": 54.771674530313454,
+              "predicted": 54.784496137527476,
+              "naive": 54.87915409888431,
+              "model": "ar2",
+              "lower": 47.32564242313016,
+              "upper": 62.24334985192479,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767232020000,
+              "trainTo": 1767232020000,
+              "targetTs": 1767232080000,
+              "actual": 44.89407306332782,
+              "predicted": 44.882892946817066,
+              "naive": 45.92795008544883,
+              "model": "ar2",
+              "lower": 37.78255789642598,
+              "upper": 51.983227997208154,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            }
+          ],
+          "skipped": []
+        },
+        {
+          "horizon": 5,
+          "n": 7,
+          "mae": 0.2207168195434964,
+          "rmse": 0.2689183419905377,
+          "bias": -0.12251869791119471,
+          "naiveRmse": 6.342948961810504,
+          "intervalN": 7,
+          "coverage": 100,
+          "samples": [
+            {
+              "originTs": 1767229860000,
+              "trainTo": 1767229860000,
+              "targetTs": 1767230160000,
+              "actual": 52.404068732652945,
+              "predicted": 51.975925148863695,
+              "naive": 52.1714223831707,
+              "model": "ar2",
+              "lower": 33.83582483732727,
+              "upper": 70.11602546040012,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230220000,
+              "trainTo": 1767230220000,
+              "targetTs": 1767230520000,
+              "actual": 46.24090141174455,
+              "predicted": 46.09441669683081,
+              "naive": 50.174016245491785,
+              "model": "ar2",
+              "lower": 28.715154854716253,
+              "upper": 63.47367853894537,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230580000,
+              "trainTo": 1767230580000,
+              "targetTs": 1767230880000,
+              "actual": 54.76954728397832,
+              "predicted": 54.59840086542469,
+              "naive": 48.04094618955616,
+              "model": "ar2",
+              "lower": 39.137358312339224,
+              "upper": 70.05944341851017,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230940000,
+              "trainTo": 1767230940000,
+              "targetTs": 1767231240000,
+              "actual": 45.187967194548705,
+              "predicted": 45.48940453264167,
+              "naive": 53.818301147734026,
+              "model": "ar2",
+              "lower": 31.618364261578478,
+              "upper": 59.360444803704866,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231300000,
+              "trainTo": 1767231300000,
+              "targetTs": 1767231600000,
+              "actual": 54.00339476781825,
+              "predicted": 53.58100372796809,
+              "naive": 45.040648279941536,
+              "model": "ar2",
+              "lower": 40.54947142557912,
+              "upper": 66.61253603035706,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231660000,
+              "trainTo": 1767231660000,
+              "targetTs": 1767231960000,
+              "actual": 47.793793457168974,
+              "predicted": 47.76063490318433,
+              "naive": 54.87915409888431,
+              "model": "ar2",
+              "lower": 31.960146081989265,
+              "upper": 63.5611237243794,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767232020000,
+              "trainTo": 1767232020000,
+              "targetTs": 1767232320000,
+              "actual": 49.90508438605814,
+              "predicted": 49.94734047367823,
+              "naive": 45.92795008544883,
+              "model": "ar2",
+              "lower": 32.31735110490893,
+              "upper": 67.57732984244754,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            }
+          ],
+          "skipped": []
+        },
+        {
+          "horizon": 10,
+          "n": 7,
+          "mae": 0.28685007705726256,
+          "rmse": 0.33381985184832597,
+          "bias": 0.22551056215287296,
+          "naiveRmse": 5.47337833357717,
+          "intervalN": 7,
+          "coverage": 100,
+          "samples": [
+            {
+              "originTs": 1767229860000,
+              "trainTo": 1767229860000,
+              "targetTs": 1767230460000,
+              "actual": 45.160442826642544,
+              "predicted": 45.650785471602084,
+              "naive": 52.1714223831707,
+              "model": "ar2",
+              "lower": 20.46439190297221,
+              "upper": 70.83717904023196,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230220000,
+              "trainTo": 1767230220000,
+              "targetTs": 1767230820000,
+              "actual": 54.676935740218596,
+              "predicted": 54.60483312683233,
+              "naive": 50.174016245491785,
+              "model": "ar2",
+              "lower": 31.066861798417435,
+              "upper": 78.14280445524723,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230580000,
+              "trainTo": 1767230580000,
+              "targetTs": 1767231180000,
+              "actual": 46.21001683362832,
+              "predicted": 46.29638119350384,
+              "naive": 48.04094618955616,
+              "model": "ar2",
+              "lower": 26.902521361689658,
+              "upper": 65.69024102531802,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230940000,
+              "trainTo": 1767230940000,
+              "targetTs": 1767231540000,
+              "actual": 52.171106709074365,
+              "predicted": 52.028521020295265,
+              "naive": 53.818301147734026,
+              "model": "ar2",
+              "lower": 37.375861033643815,
+              "upper": 66.68118100694672,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231300000,
+              "trainTo": 1767231300000,
+              "targetTs": 1767231900000,
+              "actual": 49.86216589983552,
+              "predicted": 50.32733389317469,
+              "naive": 45.040648279941536,
+              "model": "ar2",
+              "lower": 38.614594884297546,
+              "upper": 62.04007290205183,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231660000,
+              "trainTo": 1767231660000,
+              "targetTs": 1767232260000,
+              "actual": 47.77677376529191,
+              "predicted": 48.215526972724255,
+              "naive": 54.87915409888431,
+              "model": "ar2",
+              "lower": 34.27431756292289,
+              "upper": 62.15673638252562,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767232020000,
+              "trainTo": 1767232020000,
+              "targetTs": 1767232620000,
+              "actual": 53.70731920975188,
+              "predicted": 54.019953241380776,
+              "naive": 45.92795008544883,
+              "model": "ar2",
+              "lower": 31.920746307535218,
+              "upper": 76.11916017522634,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            }
+          ],
+          "skipped": []
+        }
+      ],
+      "anomalies": null,
+      "rows": [
+        {
+          "ts": 1767225600000,
+          "y": 50.06314016714692,
+          "isAnomaly": false,
+          "index": 0
+        },
+        {
+          "ts": 1767225660000,
+          "y": 52.38048703262595,
+          "isAnomaly": false,
+          "index": 1
+        },
+        {
+          "ts": 1767225720000,
+          "y": 53.994209256944465,
+          "isAnomaly": false,
+          "index": 2
+        },
+        {
+          "ts": 1767225780000,
+          "y": 54.721378101029536,
+          "isAnomaly": false,
+          "index": 3
+        },
+        {
+          "ts": 1767225840000,
+          "y": 54.872248948806075,
+          "isAnomaly": false,
+          "index": 4
+        },
+        {
+          "ts": 1767225900000,
+          "y": 54.1247495339338,
+          "isAnomaly": false,
+          "index": 5
+        },
+        {
+          "ts": 1767225960000,
+          "y": 52.33182282162843,
+          "isAnomaly": false,
+          "index": 6
+        },
+        {
+          "ts": 1767226020000,
+          "y": 50.228469718657436,
+          "isAnomaly": false,
+          "index": 7
+        },
+        {
+          "ts": 1767226080000,
+          "y": 47.63623298620793,
+          "isAnomaly": false,
+          "index": 8
+        },
+        {
+          "ts": 1767226140000,
+          "y": 46.2928917436402,
+          "isAnomaly": false,
+          "index": 9
+        },
+        {
+          "ts": 1767226200000,
+          "y": 44.93561760094658,
+          "isAnomaly": false,
+          "index": 10
+        },
+        {
+          "ts": 1767226260000,
+          "y": 45.31868550193206,
+          "isAnomaly": false,
+          "index": 11
+        },
+        {
+          "ts": 1767226320000,
+          "y": 45.934743814999955,
+          "isAnomaly": false,
+          "index": 12
+        },
+        {
+          "ts": 1767226380000,
+          "y": 47.62174649646494,
+          "isAnomaly": false,
+          "index": 13
+        },
+        {
+          "ts": 1767226440000,
+          "y": 50.105174154378474,
+          "isAnomaly": false,
+          "index": 14
+        },
+        {
+          "ts": 1767226500000,
+          "y": 52.106631261054545,
+          "isAnomaly": false,
+          "index": 15
+        },
+        {
+          "ts": 1767226560000,
+          "y": 53.824830215786804,
+          "isAnomaly": false,
+          "index": 16
+        },
+        {
+          "ts": 1767226620000,
+          "y": 55.100440696061696,
+          "isAnomaly": false,
+          "index": 17
+        },
+        {
+          "ts": 1767226680000,
+          "y": 55.0530188693042,
+          "isAnomaly": false,
+          "index": 18
+        },
+        {
+          "ts": 1767226740000,
+          "y": 53.93644953313212,
+          "isAnomaly": false,
+          "index": 19
+        },
+        {
+          "ts": 1767226800000,
+          "y": 52.26943393619744,
+          "isAnomaly": false,
+          "index": 20
+        },
+        {
+          "ts": 1767226860000,
+          "y": 49.930379821397366,
+          "isAnomaly": false,
+          "index": 21
+        },
+        {
+          "ts": 1767226920000,
+          "y": 47.96609989812586,
+          "isAnomaly": false,
+          "index": 22
+        },
+        {
+          "ts": 1767226980000,
+          "y": 45.91449999188144,
+          "isAnomaly": false,
+          "index": 23
+        },
+        {
+          "ts": 1767227040000,
+          "y": 44.935529722168006,
+          "isAnomaly": false,
+          "index": 24
+        },
+        {
+          "ts": 1767227100000,
+          "y": 45.07311143149332,
+          "isAnomaly": false,
+          "index": 25
+        },
+        {
+          "ts": 1767227160000,
+          "y": 46.202831817949914,
+          "isAnomaly": false,
+          "index": 26
+        },
+        {
+          "ts": 1767227220000,
+          "y": 47.84872105615201,
+          "isAnomaly": false,
+          "index": 27
+        },
+        {
+          "ts": 1767227280000,
+          "y": 50.031730771027505,
+          "isAnomaly": false,
+          "index": 28
+        },
+        {
+          "ts": 1767227340000,
+          "y": 52.049262470994265,
+          "isAnomaly": false,
+          "index": 29
+        },
+        {
+          "ts": 1767227400000,
+          "y": 53.77779407682756,
+          "isAnomaly": false,
+          "index": 30
+        },
+        {
+          "ts": 1767227460000,
+          "y": 54.660382017337824,
+          "isAnomaly": false,
+          "index": 31
+        },
+        {
+          "ts": 1767227520000,
+          "y": 54.74748769521072,
+          "isAnomaly": false,
+          "index": 32
+        },
+        {
+          "ts": 1767227580000,
+          "y": 53.86488690792511,
+          "isAnomaly": false,
+          "index": 33
+        },
+        {
+          "ts": 1767227640000,
+          "y": 52.14274452948955,
+          "isAnomaly": false,
+          "index": 34
+        },
+        {
+          "ts": 1767227700000,
+          "y": 50.15478973373771,
+          "isAnomaly": false,
+          "index": 35
+        },
+        {
+          "ts": 1767227760000,
+          "y": 48.027098666597034,
+          "isAnomaly": false,
+          "index": 36
+        },
+        {
+          "ts": 1767227820000,
+          "y": 46.201016296381844,
+          "isAnomaly": false,
+          "index": 37
+        },
+        {
+          "ts": 1767227880000,
+          "y": 44.95695074257151,
+          "isAnomaly": false,
+          "index": 38
+        },
+        {
+          "ts": 1767227940000,
+          "y": 45.34427593108908,
+          "isAnomaly": false,
+          "index": 39
+        },
+        {
+          "ts": 1767228000000,
+          "y": 45.98705492735912,
+          "isAnomaly": false,
+          "index": 40
+        },
+        {
+          "ts": 1767228060000,
+          "y": 48.051257942784446,
+          "isAnomaly": false,
+          "index": 41
+        },
+        {
+          "ts": 1767228120000,
+          "y": 50.081144670732314,
+          "isAnomaly": false,
+          "index": 42
+        },
+        {
+          "ts": 1767228180000,
+          "y": 52.32476547004667,
+          "isAnomaly": false,
+          "index": 43
+        },
+        {
+          "ts": 1767228240000,
+          "y": 54.03801270841548,
+          "isAnomaly": false,
+          "index": 44
+        },
+        {
+          "ts": 1767228300000,
+          "y": 54.81246625322207,
+          "isAnomaly": false,
+          "index": 45
+        },
+        {
+          "ts": 1767228360000,
+          "y": 54.861575600051424,
+          "isAnomaly": false,
+          "index": 46
+        },
+        {
+          "ts": 1767228420000,
+          "y": 53.68285993597399,
+          "isAnomaly": false,
+          "index": 47
+        },
+        {
+          "ts": 1767228480000,
+          "y": 52.08326430236934,
+          "isAnomaly": false,
+          "index": 48
+        },
+        {
+          "ts": 1767228540000,
+          "y": 50.00909375227989,
+          "isAnomaly": false,
+          "index": 49
+        },
+        {
+          "ts": 1767228600000,
+          "y": 47.73012441841873,
+          "isAnomaly": false,
+          "index": 50
+        },
+        {
+          "ts": 1767228660000,
+          "y": 46.17265570198257,
+          "isAnomaly": false,
+          "index": 51
+        },
+        {
+          "ts": 1767228720000,
+          "y": 45.019342582232206,
+          "isAnomaly": false,
+          "index": 52
+        },
+        {
+          "ts": 1767228780000,
+          "y": 44.923779831944856,
+          "isAnomaly": false,
+          "index": 53
+        },
+        {
+          "ts": 1767228840000,
+          "y": 45.95459012334307,
+          "isAnomaly": false,
+          "index": 54
+        },
+        {
+          "ts": 1767228900000,
+          "y": 47.94855724981042,
+          "isAnomaly": false,
+          "index": 55
+        },
+        {
+          "ts": 1767228960000,
+          "y": 50.029991892240936,
+          "isAnomaly": false,
+          "index": 56
+        },
+        {
+          "ts": 1767229020000,
+          "y": 52.04708067601559,
+          "isAnomaly": false,
+          "index": 57
+        },
+        {
+          "ts": 1767229080000,
+          "y": 54.087273666438854,
+          "isAnomaly": false,
+          "index": 58
+        },
+        {
+          "ts": 1767229140000,
+          "y": 55.058056976379,
+          "isAnomaly": false,
+          "index": 59
+        },
+        {
+          "ts": 1767229200000,
+          "y": 55.03250279012427,
+          "isAnomaly": false,
+          "index": 60
+        },
+        {
+          "ts": 1767229260000,
+          "y": 53.788838384588466,
+          "isAnomaly": false,
+          "index": 61
+        },
+        {
+          "ts": 1767229320000,
+          "y": 52.19898345755426,
+          "isAnomaly": false,
+          "index": 62
+        },
+        {
+          "ts": 1767229380000,
+          "y": 50.07580331478269,
+          "isAnomaly": false,
+          "index": 63
+        },
+        {
+          "ts": 1767229440000,
+          "y": 47.90541749419632,
+          "isAnomaly": false,
+          "index": 64
+        },
+        {
+          "ts": 1767229500000,
+          "y": 46.28436299813052,
+          "isAnomaly": false,
+          "index": 65
+        },
+        {
+          "ts": 1767229560000,
+          "y": 45.028746026947054,
+          "isAnomaly": false,
+          "index": 66
+        },
+        {
+          "ts": 1767229620000,
+          "y": 45.11125138823584,
+          "isAnomaly": false,
+          "index": 67
+        },
+        {
+          "ts": 1767229680000,
+          "y": 46.241634092788004,
+          "isAnomaly": false,
+          "index": 68
+        },
+        {
+          "ts": 1767229740000,
+          "y": 47.64255943538608,
+          "isAnomaly": false,
+          "index": 69
+        },
+        {
+          "ts": 1767229800000,
+          "y": 50.011550041064616,
+          "isAnomaly": false,
+          "index": 70
+        },
+        {
+          "ts": 1767229860000,
+          "y": 52.1714223831707,
+          "isAnomaly": false,
+          "index": 71
+        },
+        {
+          "ts": 1767229920000,
+          "y": 54.07183117560039,
+          "isAnomaly": false,
+          "index": 72
+        },
+        {
+          "ts": 1767229980000,
+          "y": 55.02940971955015,
+          "isAnomaly": false,
+          "index": 73
+        },
+        {
+          "ts": 1767230040000,
+          "y": 55.02142909865185,
+          "isAnomaly": false,
+          "index": 74
+        },
+        {
+          "ts": 1767230100000,
+          "y": 53.959649705690566,
+          "isAnomaly": false,
+          "index": 75
+        },
+        {
+          "ts": 1767230160000,
+          "y": 52.404068732652945,
+          "isAnomaly": false,
+          "index": 76
+        },
+        {
+          "ts": 1767230220000,
+          "y": 50.174016245491785,
+          "isAnomaly": false,
+          "index": 77
+        },
+        {
+          "ts": 1767230280000,
+          "y": 47.93513946423295,
+          "isAnomaly": false,
+          "index": 78
+        },
+        {
+          "ts": 1767230340000,
+          "y": 46.10663619530458,
+          "isAnomaly": false,
+          "index": 79
+        },
+        {
+          "ts": 1767230400000,
+          "y": 45.074384671195304,
+          "isAnomaly": false,
+          "index": 80
+        },
+        {
+          "ts": 1767230460000,
+          "y": 45.160442826642544,
+          "isAnomaly": false,
+          "index": 81
+        },
+        {
+          "ts": 1767230520000,
+          "y": 46.24090141174455,
+          "isAnomaly": false,
+          "index": 82
+        },
+        {
+          "ts": 1767230580000,
+          "y": 48.04094618955616,
+          "isAnomaly": false,
+          "index": 83
+        },
+        {
+          "ts": 1767230640000,
+          "y": 50.01984868410974,
+          "isAnomaly": false,
+          "index": 84
+        },
+        {
+          "ts": 1767230700000,
+          "y": 51.988069869447635,
+          "isAnomaly": false,
+          "index": 85
+        },
+        {
+          "ts": 1767230760000,
+          "y": 53.821271252100566,
+          "isAnomaly": false,
+          "index": 86
+        },
+        {
+          "ts": 1767230820000,
+          "y": 54.676935740218596,
+          "isAnomaly": false,
+          "index": 87
+        },
+        {
+          "ts": 1767230880000,
+          "y": 54.76954728397832,
+          "isAnomaly": false,
+          "index": 88
+        },
+        {
+          "ts": 1767230940000,
+          "y": 53.818301147734026,
+          "isAnomaly": false,
+          "index": 89
+        },
+        {
+          "ts": 1767231000000,
+          "y": 52.17234460486113,
+          "isAnomaly": false,
+          "index": 90
+        },
+        {
+          "ts": 1767231060000,
+          "y": 50.09161858540031,
+          "isAnomaly": false,
+          "index": 91
+        },
+        {
+          "ts": 1767231120000,
+          "y": 47.954921182636056,
+          "isAnomaly": false,
+          "index": 92
+        },
+        {
+          "ts": 1767231180000,
+          "y": 46.21001683362832,
+          "isAnomaly": false,
+          "index": 93
+        },
+        {
+          "ts": 1767231240000,
+          "y": 45.187967194548705,
+          "isAnomaly": false,
+          "index": 94
+        },
+        {
+          "ts": 1767231300000,
+          "y": 45.040648279941536,
+          "isAnomaly": false,
+          "index": 95
+        },
+        {
+          "ts": 1767231360000,
+          "y": 46.29281568211574,
+          "isAnomaly": false,
+          "index": 96
+        },
+        {
+          "ts": 1767231420000,
+          "y": 47.8907650241068,
+          "isAnomaly": false,
+          "index": 97
+        },
+        {
+          "ts": 1767231480000,
+          "y": 50.15841416154056,
+          "isAnomaly": false,
+          "index": 98
+        },
+        {
+          "ts": 1767231540000,
+          "y": 52.171106709074365,
+          "isAnomaly": false,
+          "index": 99
+        },
+        {
+          "ts": 1767231600000,
+          "y": 54.00339476781825,
+          "isAnomaly": false,
+          "index": 100
+        },
+        {
+          "ts": 1767231660000,
+          "y": 54.87915409888431,
+          "isAnomaly": false,
+          "index": 101
+        },
+        {
+          "ts": 1767231720000,
+          "y": 54.771674530313454,
+          "isAnomaly": false,
+          "index": 102
+        },
+        {
+          "ts": 1767231780000,
+          "y": 53.93179461370152,
+          "isAnomaly": false,
+          "index": 103
+        },
+        {
+          "ts": 1767231840000,
+          "y": 52.272757506091246,
+          "isAnomaly": false,
+          "index": 104
+        },
+        {
+          "ts": 1767231900000,
+          "y": 49.86216589983552,
+          "isAnomaly": false,
+          "index": 105
+        },
+        {
+          "ts": 1767231960000,
+          "y": 47.793793457168974,
+          "isAnomaly": false,
+          "index": 106
+        },
+        {
+          "ts": 1767232020000,
+          "y": 45.92795008544883,
+          "isAnomaly": false,
+          "index": 107
+        },
+        {
+          "ts": 1767232080000,
+          "y": 44.89407306332782,
+          "isAnomaly": false,
+          "index": 108
+        },
+        {
+          "ts": 1767232140000,
+          "y": 45.071438871442226,
+          "isAnomaly": false,
+          "index": 109
+        },
+        {
+          "ts": 1767232200000,
+          "y": 45.90321781610209,
+          "isAnomaly": false,
+          "index": 110
+        },
+        {
+          "ts": 1767232260000,
+          "y": 47.77677376529191,
+          "isAnomaly": false,
+          "index": 111
+        },
+        {
+          "ts": 1767232320000,
+          "y": 49.90508438605814,
+          "isAnomaly": false,
+          "index": 112
+        },
+        {
+          "ts": 1767232380000,
+          "y": 52.20217376166965,
+          "isAnomaly": false,
+          "index": 113
+        },
+        {
+          "ts": 1767232440000,
+          "y": 53.71659973866234,
+          "isAnomaly": false,
+          "index": 114
+        },
+        {
+          "ts": 1767232500000,
+          "y": 54.77666530154004,
+          "isAnomaly": false,
+          "index": 115
+        },
+        {
+          "ts": 1767232560000,
+          "y": 54.705916154787985,
+          "isAnomaly": false,
+          "index": 116
+        },
+        {
+          "ts": 1767232620000,
+          "y": 53.70731920975188,
+          "isAnomaly": false,
+          "index": 117
+        },
+        {
+          "ts": 1767232680000,
+          "y": 52.27728270171224,
+          "isAnomaly": false,
+          "index": 118
+        },
+        {
+          "ts": 1767232740000,
+          "y": 49.89780529759827,
+          "isAnomaly": false,
+          "index": 119
+        }
+      ]
+    },
+    {
+      "id": "step",
+      "name": "Нова зміна режиму",
+      "seed": 91004,
+      "trainPoints": 72,
+      "testPoints": 48,
+      "unit": "ум. од.",
+      "byHorizon": [
+        {
+          "horizon": 1,
+          "n": 7,
+          "mae": 1.3552742780676976,
+          "rmse": 2.9119296169581053,
+          "bias": -1.2698860155501837,
+          "naiveRmse": 2.797471136582457,
+          "intervalN": 7,
+          "coverage": 85.71428571428571,
+          "samples": [
+            {
+              "originTs": 1767229860000,
+              "trainTo": 1767229860000,
+              "targetTs": 1767229920000,
+              "actual": 45.20591746494174,
+              "predicted": 45.00032074294737,
+              "naive": 45.18544311095029,
+              "model": "ar2",
+              "lower": 44.45389418259016,
+              "upper": 45.546747303304585,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230220000,
+              "trainTo": 1767230220000,
+              "targetTs": 1767230280000,
+              "actual": 44.73556619212032,
+              "predicted": 44.996296777579104,
+              "naive": 45.139825044572355,
+              "model": "ar2",
+              "lower": 44.44987021722189,
+              "upper": 45.542723337936316,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230580000,
+              "trainTo": 1767230580000,
+              "targetTs": 1767230640000,
+              "actual": 52.609820084273814,
+              "predicted": 44.952746320717885,
+              "naive": 45.26116311084479,
+              "model": "ar2",
+              "lower": 44.42130701640229,
+              "upper": 45.48418562503348,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230940000,
+              "trainTo": 1767230940000,
+              "targetTs": 1767231000000,
+              "actual": 53.274972514621915,
+              "predicted": 52.71642582118511,
+              "naive": 52.71642582118511,
+              "model": "naive",
+              "lower": 52.10864257793874,
+              "upper": 53.324209064431486,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231300000,
+              "trainTo": 1767231300000,
+              "targetTs": 1767231360000,
+              "actual": 53.05963457114994,
+              "predicted": 53.09776290450245,
+              "naive": 53.09776290450245,
+              "model": "naive",
+              "lower": 52.48997966125608,
+              "upper": 53.70554614774883,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231660000,
+              "trainTo": 1767231660000,
+              "targetTs": 1767231720000,
+              "actual": 53.126113150455055,
+              "predicted": 52.801243191584945,
+              "naive": 52.801243191584945,
+              "model": "naive",
+              "lower": 52.18461542837321,
+              "upper": 53.417870954796676,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767232020000,
+              "trainTo": 1767232020000,
+              "targetTs": 1767232080000,
+              "actual": 53.16716146767139,
+              "predicted": 52.725187577866016,
+              "naive": 52.725187577866016,
+              "model": "naive",
+              "lower": 52.069666990047935,
+              "upper": 53.3807081656841,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            }
+          ],
+          "skipped": []
+        },
+        {
+          "horizon": 5,
+          "n": 7,
+          "mae": 1.4026824144049996,
+          "rmse": 3.1606570498603728,
+          "bias": -1.263244918275044,
+          "naiveRmse": 3.0585274021619537,
+          "intervalN": 7,
+          "coverage": 85.71428571428571,
+          "samples": [
+            {
+              "originTs": 1767229860000,
+              "trainTo": 1767229860000,
+              "targetTs": 1767230160000,
+              "actual": 45.16809357423335,
+              "predicted": 45.00513983027206,
+              "naive": 45.18544311095029,
+              "model": "ar2",
+              "lower": 44.49603377044356,
+              "upper": 45.514245890100554,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230220000,
+              "trainTo": 1767230220000,
+              "targetTs": 1767230520000,
+              "actual": 45.35738513432443,
+              "predicted": 45.007471028991375,
+              "naive": 45.139825044572355,
+              "model": "ar2",
+              "lower": 44.49836496916288,
+              "upper": 45.51657708881987,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230580000,
+              "trainTo": 1767230580000,
+              "targetTs": 1767230880000,
+              "actual": 53.324209064431486,
+              "predicted": 44.996094544064846,
+              "naive": 45.26116311084479,
+              "model": "ar2",
+              "lower": 44.52541952273155,
+              "upper": 45.46676956539814,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230940000,
+              "trainTo": 1767230940000,
+              "targetTs": 1767231240000,
+              "actual": 52.65898188464344,
+              "predicted": 52.71642582118511,
+              "naive": 52.71642582118511,
+              "model": "naive",
+              "lower": 44.69107886475455,
+              "upper": 60.74177277761567,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231300000,
+              "trainTo": 1767231300000,
+              "targetTs": 1767231600000,
+              "actual": 52.66717560458928,
+              "predicted": 53.09776290450245,
+              "naive": 53.09776290450245,
+              "model": "naive",
+              "lower": 45.074660567894504,
+              "upper": 61.1208652411104,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231660000,
+              "trainTo": 1767231660000,
+              "targetTs": 1767231960000,
+              "actual": 53.28397601991892,
+              "predicted": 52.801243191584945,
+              "naive": 52.801243191584945,
+              "model": "naive",
+              "lower": 44.78753710410077,
+              "upper": 60.81494927906912,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767232020000,
+              "trainTo": 1767232020000,
+              "targetTs": 1767232320000,
+              "actual": 52.732218044251205,
+              "predicted": 52.725187577866016,
+              "naive": 52.725187577866016,
+              "model": "naive",
+              "lower": 44.73373173421219,
+              "upper": 60.71664342151984,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            }
+          ],
+          "skipped": []
+        },
+        {
+          "horizon": 10,
+          "n": 7,
+          "mae": 2.508105090915386,
+          "rmse": 4.173851304655381,
+          "bias": -2.379511584090101,
+          "naiveRmse": 4.071408623380092,
+          "intervalN": 7,
+          "coverage": 71.42857142857143,
+          "samples": [
+            {
+              "originTs": 1767229860000,
+              "trainTo": 1767229860000,
+              "targetTs": 1767230460000,
+              "actual": 44.61182732768357,
+              "predicted": 45.005183905927446,
+              "naive": 45.18544311095029,
+              "model": "ar2",
+              "lower": 44.470919148915755,
+              "upper": 45.53944866293914,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230220000,
+              "trainTo": 1767230220000,
+              "targetTs": 1767230820000,
+              "actual": 52.7651909686625,
+              "predicted": 45.00751488601737,
+              "naive": 45.139825044572355,
+              "model": "ar2",
+              "lower": 44.533866207274194,
+              "upper": 45.48116356476054,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230580000,
+              "trainTo": 1767230580000,
+              "targetTs": 1767231180000,
+              "actual": 52.79007543381304,
+              "predicted": 44.9967347218323,
+              "naive": 45.26116311084479,
+              "model": "ar2",
+              "lower": 44.508460131686775,
+              "upper": 45.48500931197782,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230940000,
+              "trainTo": 1767230940000,
+              "targetTs": 1767231540000,
+              "actual": 53.28380336780101,
+              "predicted": 52.71642582118511,
+              "naive": 52.71642582118511,
+              "model": "naive",
+              "lower": 44.706110365557734,
+              "upper": 60.72674127681249,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231300000,
+              "trainTo": 1767231300000,
+              "targetTs": 1767231900000,
+              "actual": 53.04104220885783,
+              "predicted": 53.09776290450245,
+              "naive": 53.09776290450245,
+              "model": "naive",
+              "lower": 44.81672552225407,
+              "upper": 61.37880028675084,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231660000,
+              "trainTo": 1767231660000,
+              "targetTs": 1767232260000,
+              "actual": 53.120234495773914,
+              "predicted": 52.801243191584945,
+              "naive": 52.801243191584945,
+              "model": "naive",
+              "lower": 44.53035611876354,
+              "upper": 61.07213026440635,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767232020000,
+              "trainTo": 1767232020000,
+              "targetTs": 1767232620000,
+              "actual": 53.39446029495448,
+              "predicted": 52.725187577866016,
+              "naive": 52.725187577866016,
+              "model": "naive",
+              "lower": 44.47746769020649,
+              "upper": 60.972907465525545,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            }
+          ],
+          "skipped": []
+        }
+      ],
+      "anomalies": null,
+      "rows": [
+        {
+          "ts": 1767225600000,
+          "y": 45.10527783241123,
+          "isAnomaly": false,
+          "index": 0
+        },
+        {
+          "ts": 1767225660000,
+          "y": 45.339359238930044,
+          "isAnomaly": false,
+          "index": 1
+        },
+        {
+          "ts": 1767225720000,
+          "y": 44.83195381984115,
+          "isAnomaly": false,
+          "index": 2
+        },
+        {
+          "ts": 1767225780000,
+          "y": 45.07733010984957,
+          "isAnomaly": false,
+          "index": 3
+        },
+        {
+          "ts": 1767225840000,
+          "y": 45.26426954008639,
+          "isAnomaly": false,
+          "index": 4
+        },
+        {
+          "ts": 1767225900000,
+          "y": 45.04986325595528,
+          "isAnomaly": false,
+          "index": 5
+        },
+        {
+          "ts": 1767225960000,
+          "y": 45.281061177514495,
+          "isAnomaly": false,
+          "index": 6
+        },
+        {
+          "ts": 1767226020000,
+          "y": 45.27033692039549,
+          "isAnomaly": false,
+          "index": 7
+        },
+        {
+          "ts": 1767226080000,
+          "y": 44.81962162274867,
+          "isAnomaly": false,
+          "index": 8
+        },
+        {
+          "ts": 1767226140000,
+          "y": 45.39781879596412,
+          "isAnomaly": false,
+          "index": 9
+        },
+        {
+          "ts": 1767226200000,
+          "y": 45.39883984867483,
+          "isAnomaly": false,
+          "index": 10
+        },
+        {
+          "ts": 1767226260000,
+          "y": 45.20780712664127,
+          "isAnomaly": false,
+          "index": 11
+        },
+        {
+          "ts": 1767226320000,
+          "y": 44.803604405000804,
+          "isAnomaly": false,
+          "index": 12
+        },
+        {
+          "ts": 1767226380000,
+          "y": 45.081524065881965,
+          "isAnomaly": false,
+          "index": 13
+        },
+        {
+          "ts": 1767226440000,
+          "y": 45.27812411300838,
+          "isAnomaly": false,
+          "index": 14
+        },
+        {
+          "ts": 1767226500000,
+          "y": 45.047519215755166,
+          "isAnomaly": false,
+          "index": 15
+        },
+        {
+          "ts": 1767226560000,
+          "y": 45.330720101110636,
+          "isAnomaly": false,
+          "index": 16
+        },
+        {
+          "ts": 1767226620000,
+          "y": 44.69212796352804,
+          "isAnomaly": false,
+          "index": 17
+        },
+        {
+          "ts": 1767226680000,
+          "y": 45.13841421697289,
+          "isAnomaly": false,
+          "index": 18
+        },
+        {
+          "ts": 1767226740000,
+          "y": 45.336299224197866,
+          "isAnomaly": false,
+          "index": 19
+        },
+        {
+          "ts": 1767226800000,
+          "y": 45.13653913587332,
+          "isAnomaly": false,
+          "index": 20
+        },
+        {
+          "ts": 1767226860000,
+          "y": 45.25106230136007,
+          "isAnomaly": false,
+          "index": 21
+        },
+        {
+          "ts": 1767226920000,
+          "y": 44.70696666110307,
+          "isAnomaly": false,
+          "index": 22
+        },
+        {
+          "ts": 1767226980000,
+          "y": 45.31914412137121,
+          "isAnomaly": false,
+          "index": 23
+        },
+        {
+          "ts": 1767227040000,
+          "y": 44.64454975537956,
+          "isAnomaly": false,
+          "index": 24
+        },
+        {
+          "ts": 1767227100000,
+          "y": 45.32080333661288,
+          "isAnomaly": false,
+          "index": 25
+        },
+        {
+          "ts": 1767227160000,
+          "y": 45.310328238084914,
+          "isAnomaly": false,
+          "index": 26
+        },
+        {
+          "ts": 1767227220000,
+          "y": 44.66012592613697,
+          "isAnomaly": false,
+          "index": 27
+        },
+        {
+          "ts": 1767227280000,
+          "y": 45.26334744375199,
+          "isAnomaly": false,
+          "index": 28
+        },
+        {
+          "ts": 1767227340000,
+          "y": 44.80574537198991,
+          "isAnomaly": false,
+          "index": 29
+        },
+        {
+          "ts": 1767227400000,
+          "y": 44.63304946832359,
+          "isAnomaly": false,
+          "index": 30
+        },
+        {
+          "ts": 1767227460000,
+          "y": 45.06116726510227,
+          "isAnomaly": false,
+          "index": 31
+        },
+        {
+          "ts": 1767227520000,
+          "y": 45.354842878691855,
+          "isAnomaly": false,
+          "index": 32
+        },
+        {
+          "ts": 1767227580000,
+          "y": 45.19161781240255,
+          "isAnomaly": false,
+          "index": 33
+        },
+        {
+          "ts": 1767227640000,
+          "y": 44.946287276782094,
+          "isAnomaly": false,
+          "index": 34
+        },
+        {
+          "ts": 1767227700000,
+          "y": 44.71982688941061,
+          "isAnomaly": false,
+          "index": 35
+        },
+        {
+          "ts": 1767227760000,
+          "y": 44.632293578609826,
+          "isAnomaly": false,
+          "index": 36
+        },
+        {
+          "ts": 1767227820000,
+          "y": 44.684046832099554,
+          "isAnomaly": false,
+          "index": 37
+        },
+        {
+          "ts": 1767227880000,
+          "y": 45.05858377758413,
+          "isAnomaly": false,
+          "index": 38
+        },
+        {
+          "ts": 1767227940000,
+          "y": 45.0873302726075,
+          "isAnomaly": false,
+          "index": 39
+        },
+        {
+          "ts": 1767228000000,
+          "y": 45.21427055560052,
+          "isAnomaly": false,
+          "index": 40
+        },
+        {
+          "ts": 1767228060000,
+          "y": 44.884784002043304,
+          "isAnomaly": false,
+          "index": 41
+        },
+        {
+          "ts": 1767228120000,
+          "y": 44.633392739854756,
+          "isAnomaly": false,
+          "index": 42
+        },
+        {
+          "ts": 1767228180000,
+          "y": 45.03844293877482,
+          "isAnomaly": false,
+          "index": 43
+        },
+        {
+          "ts": 1767228240000,
+          "y": 44.87895250152796,
+          "isAnomaly": false,
+          "index": 44
+        },
+        {
+          "ts": 1767228300000,
+          "y": 44.74953617621213,
+          "isAnomaly": false,
+          "index": 45
+        },
+        {
+          "ts": 1767228360000,
+          "y": 45.072338404133916,
+          "isAnomaly": false,
+          "index": 46
+        },
+        {
+          "ts": 1767228420000,
+          "y": 44.66397653743625,
+          "isAnomaly": false,
+          "index": 47
+        },
+        {
+          "ts": 1767228480000,
+          "y": 44.85372897144407,
+          "isAnomaly": false,
+          "index": 48
+        },
+        {
+          "ts": 1767228540000,
+          "y": 45.151800729334354,
+          "isAnomaly": false,
+          "index": 49
+        },
+        {
+          "ts": 1767228600000,
+          "y": 45.20720692295581,
+          "isAnomaly": false,
+          "index": 50
+        },
+        {
+          "ts": 1767228660000,
+          "y": 45.27346400097012,
+          "isAnomaly": false,
+          "index": 51
+        },
+        {
+          "ts": 1767228720000,
+          "y": 45.242660026438536,
+          "isAnomaly": false,
+          "index": 52
+        },
+        {
+          "ts": 1767228780000,
+          "y": 44.980158731900154,
+          "isAnomaly": false,
+          "index": 53
+        },
+        {
+          "ts": 1767228840000,
+          "y": 45.374967188946904,
+          "isAnomaly": false,
+          "index": 54
+        },
+        {
+          "ts": 1767228900000,
+          "y": 45.09435558449477,
+          "isAnomaly": false,
+          "index": 55
+        },
+        {
+          "ts": 1767228960000,
+          "y": 44.68618704061955,
+          "isAnomaly": false,
+          "index": 56
+        },
+        {
+          "ts": 1767229020000,
+          "y": 44.711824376508595,
+          "isAnomaly": false,
+          "index": 57
+        },
+        {
+          "ts": 1767229080000,
+          "y": 45.25825093686581,
+          "isAnomaly": false,
+          "index": 58
+        },
+        {
+          "ts": 1767229140000,
+          "y": 44.853931619599464,
+          "isAnomaly": false,
+          "index": 59
+        },
+        {
+          "ts": 1767229200000,
+          "y": 44.93643648829311,
+          "isAnomaly": false,
+          "index": 60
+        },
+        {
+          "ts": 1767229260000,
+          "y": 45.001743398420516,
+          "isAnomaly": false,
+          "index": 61
+        },
+        {
+          "ts": 1767229320000,
+          "y": 44.64291389193386,
+          "isAnomaly": false,
+          "index": 62
+        },
+        {
+          "ts": 1767229380000,
+          "y": 45.24005387090146,
+          "isAnomaly": false,
+          "index": 63
+        },
+        {
+          "ts": 1767229440000,
+          "y": 45.13145686648786,
+          "isAnomaly": false,
+          "index": 64
+        },
+        {
+          "ts": 1767229500000,
+          "y": 44.798295790329576,
+          "isAnomaly": false,
+          "index": 65
+        },
+        {
+          "ts": 1767229560000,
+          "y": 45.24374726302922,
+          "isAnomaly": false,
+          "index": 66
+        },
+        {
+          "ts": 1767229620000,
+          "y": 45.05233295187354,
+          "isAnomaly": false,
+          "index": 67
+        },
+        {
+          "ts": 1767229680000,
+          "y": 44.65891291704029,
+          "isAnomaly": false,
+          "index": 68
+        },
+        {
+          "ts": 1767229740000,
+          "y": 45.07688771784306,
+          "isAnomaly": false,
+          "index": 69
+        },
+        {
+          "ts": 1767229800000,
+          "y": 44.84385420531034,
+          "isAnomaly": false,
+          "index": 70
+        },
+        {
+          "ts": 1767229860000,
+          "y": 45.18544311095029,
+          "isAnomaly": false,
+          "index": 71
+        },
+        {
+          "ts": 1767229920000,
+          "y": 45.20591746494174,
+          "isAnomaly": false,
+          "index": 72
+        },
+        {
+          "ts": 1767229980000,
+          "y": 44.943148198165,
+          "isAnomaly": false,
+          "index": 73
+        },
+        {
+          "ts": 1767230040000,
+          "y": 45.24783465228975,
+          "isAnomaly": false,
+          "index": 74
+        },
+        {
+          "ts": 1767230100000,
+          "y": 45.0009669624269,
+          "isAnomaly": false,
+          "index": 75
+        },
+        {
+          "ts": 1767230160000,
+          "y": 45.16809357423335,
+          "isAnomaly": false,
+          "index": 76
+        },
+        {
+          "ts": 1767230220000,
+          "y": 45.139825044572355,
+          "isAnomaly": false,
+          "index": 77
+        },
+        {
+          "ts": 1767230280000,
+          "y": 44.73556619212032,
+          "isAnomaly": false,
+          "index": 78
+        },
+        {
+          "ts": 1767230340000,
+          "y": 44.70470153633505,
+          "isAnomaly": false,
+          "index": 79
+        },
+        {
+          "ts": 1767230400000,
+          "y": 45.13781871646643,
+          "isAnomaly": false,
+          "index": 80
+        },
+        {
+          "ts": 1767230460000,
+          "y": 44.61182732768357,
+          "isAnomaly": false,
+          "index": 81
+        },
+        {
+          "ts": 1767230520000,
+          "y": 45.35738513432443,
+          "isAnomaly": false,
+          "index": 82
+        },
+        {
+          "ts": 1767230580000,
+          "y": 45.26116311084479,
+          "isAnomaly": false,
+          "index": 83
+        },
+        {
+          "ts": 1767230640000,
+          "y": 52.609820084273814,
+          "isAnomaly": false,
+          "index": 84
+        },
+        {
+          "ts": 1767230700000,
+          "y": 52.75313937868923,
+          "isAnomaly": false,
+          "index": 85
+        },
+        {
+          "ts": 1767230760000,
+          "y": 53.00850513931364,
+          "isAnomaly": false,
+          "index": 86
+        },
+        {
+          "ts": 1767230820000,
+          "y": 52.7651909686625,
+          "isAnomaly": false,
+          "index": 87
+        },
+        {
+          "ts": 1767230880000,
+          "y": 53.324209064431486,
+          "isAnomaly": false,
+          "index": 88
+        },
+        {
+          "ts": 1767230940000,
+          "y": 52.71642582118511,
+          "isAnomaly": false,
+          "index": 89
+        },
+        {
+          "ts": 1767231000000,
+          "y": 53.274972514621915,
+          "isAnomaly": false,
+          "index": 90
+        },
+        {
+          "ts": 1767231060000,
+          "y": 52.90589130222797,
+          "isAnomaly": false,
+          "index": 91
+        },
+        {
+          "ts": 1767231120000,
+          "y": 52.975782190263274,
+          "isAnomaly": false,
+          "index": 92
+        },
+        {
+          "ts": 1767231180000,
+          "y": 52.79007543381304,
+          "isAnomaly": false,
+          "index": 93
+        },
+        {
+          "ts": 1767231240000,
+          "y": 52.65898188464344,
+          "isAnomaly": false,
+          "index": 94
+        },
+        {
+          "ts": 1767231300000,
+          "y": 53.09776290450245,
+          "isAnomaly": false,
+          "index": 95
+        },
+        {
+          "ts": 1767231360000,
+          "y": 53.05963457114994,
+          "isAnomaly": false,
+          "index": 96
+        },
+        {
+          "ts": 1767231420000,
+          "y": 52.8738996045664,
+          "isAnomaly": false,
+          "index": 97
+        },
+        {
+          "ts": 1767231480000,
+          "y": 52.96353912558406,
+          "isAnomaly": false,
+          "index": 98
+        },
+        {
+          "ts": 1767231540000,
+          "y": 53.28380336780101,
+          "isAnomaly": false,
+          "index": 99
+        },
+        {
+          "ts": 1767231600000,
+          "y": 52.66717560458928,
+          "isAnomaly": false,
+          "index": 100
+        },
+        {
+          "ts": 1767231660000,
+          "y": 52.801243191584945,
+          "isAnomaly": false,
+          "index": 101
+        },
+        {
+          "ts": 1767231720000,
+          "y": 53.126113150455055,
+          "isAnomaly": false,
+          "index": 102
+        },
+        {
+          "ts": 1767231780000,
+          "y": 52.615370023064315,
+          "isAnomaly": false,
+          "index": 103
+        },
+        {
+          "ts": 1767231840000,
+          "y": 53.027797657437624,
+          "isAnomaly": false,
+          "index": 104
+        },
+        {
+          "ts": 1767231900000,
+          "y": 53.04104220885783,
+          "isAnomaly": false,
+          "index": 105
+        },
+        {
+          "ts": 1767231960000,
+          "y": 53.28397601991892,
+          "isAnomaly": false,
+          "index": 106
+        },
+        {
+          "ts": 1767232020000,
+          "y": 52.725187577866016,
+          "isAnomaly": false,
+          "index": 107
+        },
+        {
+          "ts": 1767232080000,
+          "y": 53.16716146767139,
+          "isAnomaly": false,
+          "index": 108
+        },
+        {
+          "ts": 1767232140000,
+          "y": 53.27896655481309,
+          "isAnomaly": false,
+          "index": 109
+        },
+        {
+          "ts": 1767232200000,
+          "y": 53.142081637494265,
+          "isAnomaly": false,
+          "index": 110
+        },
+        {
+          "ts": 1767232260000,
+          "y": 53.120234495773914,
+          "isAnomaly": false,
+          "index": 111
+        },
+        {
+          "ts": 1767232320000,
+          "y": 52.732218044251205,
+          "isAnomaly": false,
+          "index": 112
+        },
+        {
+          "ts": 1767232380000,
+          "y": 53.19825713299215,
+          "isAnomaly": false,
+          "index": 113
+        },
+        {
+          "ts": 1767232440000,
+          "y": 53.06184221506119,
+          "isAnomaly": false,
+          "index": 114
+        },
+        {
+          "ts": 1767232500000,
+          "y": 53.28804756719619,
+          "isAnomaly": false,
+          "index": 115
+        },
+        {
+          "ts": 1767232560000,
+          "y": 53.148800978437066,
+          "isAnomaly": false,
+          "index": 116
+        },
+        {
+          "ts": 1767232620000,
+          "y": 53.39446029495448,
+          "isAnomaly": false,
+          "index": 117
+        },
+        {
+          "ts": 1767232680000,
+          "y": 53.21043475661427,
+          "isAnomaly": false,
+          "index": 118
+        },
+        {
+          "ts": 1767232740000,
+          "y": 52.754101500846446,
+          "isAnomaly": false,
+          "index": 119
+        }
+      ]
+    },
+    {
+      "id": "spikes",
+      "name": "Позначені викиди",
+      "seed": 91005,
+      "trainPoints": 72,
+      "testPoints": 48,
+      "unit": "ум. од.",
+      "byHorizon": [
+        {
+          "horizon": 1,
+          "n": 7,
+          "mae": 3.060449246968719,
+          "rmse": 7.246951461503943,
+          "bias": 2.6889483725515495,
+          "naiveRmse": 7.263527411856534,
+          "intervalN": 7,
+          "coverage": 85.71428571428571,
+          "samples": [
+            {
+              "originTs": 1767229860000,
+              "trainTo": 1767229860000,
+              "targetTs": 1767229920000,
+              "actual": 49.52908164709807,
+              "predicted": 49.96166836759205,
+              "naive": 50.69315132796764,
+              "model": "ar2",
+              "lower": 48.87956355174335,
+              "upper": 51.04377318344074,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230220000,
+              "trainTo": 1767230220000,
+              "targetTs": 1767230280000,
+              "actual": 49.97921137921512,
+              "predicted": 50.07458635475109,
+              "naive": 49.25475000925362,
+              "model": "ar2",
+              "lower": 48.873476522293565,
+              "upper": 51.27569618720862,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230580000,
+              "trainTo": 1767230580000,
+              "targetTs": 1767230640000,
+              "actual": 49.41615058034658,
+              "predicted": 68.55087000392378,
+              "naive": 68.55087000392378,
+              "model": "naive",
+              "lower": 67.19307229758374,
+              "upper": 69.90866771026381,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230940000,
+              "trainTo": 1767230940000,
+              "targetTs": 1767231000000,
+              "actual": 50.32231146655977,
+              "predicted": 50.55961533002555,
+              "naive": 50.55961533002555,
+              "model": "naive",
+              "lower": 32.10351823707181,
+              "upper": 69.01571242297929,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231300000,
+              "trainTo": 1767231300000,
+              "targetTs": 1767231360000,
+              "actual": 50.66919460333884,
+              "predicted": 50.43325027786195,
+              "naive": 50.43325027786195,
+              "model": "naive",
+              "lower": 32.04367881989583,
+              "upper": 68.82282173582807,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231660000,
+              "trainTo": 1767231660000,
+              "targetTs": 1767231720000,
+              "actual": 49.523196338489655,
+              "predicted": 49.74610302373767,
+              "naive": 49.74610302373767,
+              "model": "naive",
+              "lower": 31.325562166700827,
+              "upper": 68.1666438807745,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767232020000,
+              "trainTo": 1767232020000,
+              "targetTs": 1767232080000,
+              "actual": 50.74071878194809,
+              "predicted": 49.67641004696488,
+              "naive": 49.67641004696488,
+              "model": "naive",
+              "lower": 31.352274301355337,
+              "upper": 68.00054579257443,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            }
+          ],
+          "skipped": []
+        },
+        {
+          "horizon": 5,
+          "n": 7,
+          "mae": 5.401763391179746,
+          "rmse": 9.61734213551872,
+          "bias": 0.20093024756657688,
+          "naiveRmse": 9.620282563261144,
+          "intervalN": 7,
+          "coverage": 85.71428571428571,
+          "samples": [
+            {
+              "originTs": 1767229860000,
+              "trainTo": 1767229860000,
+              "targetTs": 1767230160000,
+              "actual": 49.76862392090261,
+              "predicted": 50.1999944914598,
+              "naive": 50.69315132796764,
+              "model": "linear",
+              "lower": 48.61138664594961,
+              "upper": 51.78860233696999,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230220000,
+              "trainTo": 1767230220000,
+              "targetTs": 1767230520000,
+              "actual": 49.35493104159832,
+              "predicted": 49.88666281512227,
+              "naive": 49.25475000925362,
+              "model": "linear",
+              "lower": 47.991656455647274,
+              "upper": 51.78166917459727,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230580000,
+              "trainTo": 1767230580000,
+              "targetTs": 1767230880000,
+              "actual": 50.77881620824337,
+              "predicted": 68.55087000392378,
+              "naive": 68.55087000392378,
+              "model": "naive",
+              "lower": 66.80823162517379,
+              "upper": 70.29350838267376,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230940000,
+              "trainTo": 1767230940000,
+              "targetTs": 1767231240000,
+              "actual": 49.99108391031623,
+              "predicted": 50.55961533002555,
+              "naive": 50.55961533002555,
+              "model": "naive",
+              "lower": 32.787561534345144,
+              "upper": 68.33166912570596,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231300000,
+              "trainTo": 1767231300000,
+              "targetTs": 1767231600000,
+              "actual": 50.450425358489156,
+              "predicted": 50.43325027786195,
+              "naive": 50.43325027786195,
+              "model": "naive",
+              "lower": 32.661196482181545,
+              "upper": 68.20530407354235,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231660000,
+              "trainTo": 1767231660000,
+              "targetTs": 1767231960000,
+              "actual": 49.440362847596404,
+              "predicted": 49.74610302373767,
+              "naive": 49.74610302373767,
+              "model": "naive",
+              "lower": 31.224098806828252,
+              "upper": 68.26810724064708,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767232020000,
+              "trainTo": 1767232020000,
+              "targetTs": 1767232320000,
+              "actual": 67.86215096898377,
+              "predicted": 49.67641004696488,
+              "naive": 49.67641004696488,
+              "model": "naive",
+              "lower": 31.119071369537423,
+              "upper": 68.23374872439234,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            }
+          ],
+          "skipped": []
+        },
+        {
+          "horizon": 10,
+          "n": 7,
+          "mae": 5.480471341962027,
+          "rmse": 9.600475473732303,
+          "bias": 0.09731964105923449,
+          "naiveRmse": 9.598846018647741,
+          "intervalN": 7,
+          "coverage": 71.42857142857143,
+          "samples": [
+            {
+              "originTs": 1767229860000,
+              "trainTo": 1767229860000,
+              "targetTs": 1767230460000,
+              "actual": 50.49726468250155,
+              "predicted": 49.98995550453083,
+              "naive": 50.69315132796764,
+              "model": "ar2",
+              "lower": 48.65825633611717,
+              "upper": 51.3216546729445,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230220000,
+              "trainTo": 1767230220000,
+              "targetTs": 1767230820000,
+              "actual": 49.63499898724258,
+              "predicted": 49.25475000925362,
+              "naive": 49.25475000925362,
+              "model": "naive",
+              "lower": 47.65994507857997,
+              "upper": 50.849554939927266,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230580000,
+              "trainTo": 1767230580000,
+              "targetTs": 1767231180000,
+              "actual": 50.624058727175,
+              "predicted": 68.55087000392378,
+              "naive": 68.55087000392378,
+              "model": "naive",
+              "lower": 67.0414203357883,
+              "upper": 70.06031967205925,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230940000,
+              "trainTo": 1767230940000,
+              "targetTs": 1767231540000,
+              "actual": 68.51308812722564,
+              "predicted": 50.55961533002555,
+              "naive": 50.55961533002555,
+              "model": "naive",
+              "lower": 48.5298762263198,
+              "upper": 52.5893544337313,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231300000,
+              "trainTo": 1767231300000,
+              "targetTs": 1767231900000,
+              "actual": 49.507296211272475,
+              "predicted": 50.43325027786195,
+              "naive": 50.43325027786195,
+              "model": "naive",
+              "lower": 32.63927020616829,
+              "upper": 68.22723034955561,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231660000,
+              "trainTo": 1767231660000,
+              "targetTs": 1767232260000,
+              "actual": 49.374628179892895,
+              "predicted": 49.74610302373767,
+              "naive": 49.74610302373767,
+              "model": "naive",
+              "lower": 31.81929174698889,
+              "upper": 67.67291430048644,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767232020000,
+              "trainTo": 1767232020000,
+              "targetTs": 1767232620000,
+              "actual": 49.378381793573496,
+              "predicted": 49.67641004696488,
+              "naive": 49.67641004696488,
+              "model": "naive",
+              "lower": 31.72293724976479,
+              "upper": 67.62988284416497,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            }
+          ],
+          "skipped": []
+        }
+      ],
+      "anomalies": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "tn": 45,
+        "threshold": 3,
+        "baselineMean": 50.08364649273456,
+        "baselineSD": 0.49372881211020236,
+        "samples": [
+          {
+            "ts": 1767229920000,
+            "actual": 49.52908164709807,
+            "label": false,
+            "detected": false,
+            "z": -1.1232175073321633
+          },
+          {
+            "ts": 1767229980000,
+            "actual": 50.756889932230116,
+            "label": false,
+            "detected": false,
+            "z": 1.3635895313018247
+          },
+          {
+            "ts": 1767230040000,
+            "actual": 49.6259507663548,
+            "label": false,
+            "detected": false,
+            "z": -0.9270184667237961
+          },
+          {
+            "ts": 1767230100000,
+            "actual": 50.55491768456996,
+            "label": false,
+            "detected": false,
+            "z": 0.9545142602093255
+          },
+          {
+            "ts": 1767230160000,
+            "actual": 49.76862392090261,
+            "label": false,
+            "detected": false,
+            "z": -0.6380477786692986
+          },
+          {
+            "ts": 1767230220000,
+            "actual": 49.25475000925362,
+            "label": false,
+            "detected": false,
+            "z": -1.6788497311676556
+          },
+          {
+            "ts": 1767230280000,
+            "actual": 49.97921137921512,
+            "label": false,
+            "detected": false,
+            "z": -0.2115232308867682
+          },
+          {
+            "ts": 1767230340000,
+            "actual": 50.15509372241795,
+            "label": false,
+            "detected": false,
+            "z": 0.14470945979033914
+          },
+          {
+            "ts": 1767230400000,
+            "actual": 49.35336899645627,
+            "label": false,
+            "detected": false,
+            "z": -1.4791065021242664
+          },
+          {
+            "ts": 1767230460000,
+            "actual": 50.49726468250155,
+            "label": false,
+            "detected": false,
+            "z": 0.8377436755193284
+          },
+          {
+            "ts": 1767230520000,
+            "actual": 49.35493104159832,
+            "label": false,
+            "detected": false,
+            "z": -1.4759427306291908
+          },
+          {
+            "ts": 1767230580000,
+            "actual": 68.55087000392378,
+            "label": true,
+            "detected": true,
+            "z": 37.403576737318815
+          },
+          {
+            "ts": 1767230640000,
+            "actual": 49.41615058034658,
+            "label": false,
+            "detected": false,
+            "z": -1.3519484705279654
+          },
+          {
+            "ts": 1767230700000,
+            "actual": 50.57967632077634,
+            "label": false,
+            "detected": false,
+            "z": 1.0046604854226506
+          },
+          {
+            "ts": 1767230760000,
+            "actual": 50.106469221413136,
+            "label": false,
+            "detected": false,
+            "z": 0.04622523158215563
+          },
+          {
+            "ts": 1767230820000,
+            "actual": 49.63499898724258,
+            "label": false,
+            "detected": false,
+            "z": -0.9086921696435988
+          },
+          {
+            "ts": 1767230880000,
+            "actual": 50.77881620824337,
+            "label": false,
+            "detected": false,
+            "z": 1.4079990846344337
+          },
+          {
+            "ts": 1767230940000,
+            "actual": 50.55961533002555,
+            "label": false,
+            "detected": false,
+            "z": 0.9640288871469663
+          },
+          {
+            "ts": 1767231000000,
+            "actual": 50.32231146655977,
+            "label": false,
+            "detected": false,
+            "z": 0.483392842328063
+          },
+          {
+            "ts": 1767231060000,
+            "actual": 49.99405925758183,
+            "label": false,
+            "detected": false,
+            "z": -0.18145028800290294
+          },
+          {
+            "ts": 1767231120000,
+            "actual": 50.20611601136625,
+            "label": false,
+            "detected": false,
+            "z": 0.24805017578020866
+          },
+          {
+            "ts": 1767231180000,
+            "actual": 50.624058727175,
+            "label": false,
+            "detected": false,
+            "z": 1.0945527609189156
+          },
+          {
+            "ts": 1767231240000,
+            "actual": 49.99108391031623,
+            "label": false,
+            "detected": false,
+            "z": -0.18747656638209523
+          },
+          {
+            "ts": 1767231300000,
+            "actual": 50.43325027786195,
+            "label": false,
+            "detected": false,
+            "z": 0.7080886846226011
+          },
+          {
+            "ts": 1767231360000,
+            "actual": 50.66919460333884,
+            "label": false,
+            "detected": false,
+            "z": 1.1859711166169131
+          },
+          {
+            "ts": 1767231420000,
+            "actual": 49.347518721222876,
+            "label": false,
+            "detected": false,
+            "z": -1.4909556692984243
+          },
+          {
+            "ts": 1767231480000,
+            "actual": 50.55490842871368,
+            "label": false,
+            "detected": false,
+            "z": 0.9544955133668283
+          },
+          {
+            "ts": 1767231540000,
+            "actual": 68.51308812722564,
+            "label": true,
+            "detected": true,
+            "z": 37.32705319692292
+          },
+          {
+            "ts": 1767231600000,
+            "actual": 50.450425358489156,
+            "label": false,
+            "detected": false,
+            "z": 0.7428751508079507
+          },
+          {
+            "ts": 1767231660000,
+            "actual": 49.74610302373767,
+            "label": false,
+            "detected": false,
+            "z": -0.6836616796865201
+          },
+          {
+            "ts": 1767231720000,
+            "actual": 49.523196338489655,
+            "label": false,
+            "detected": false,
+            "z": -1.1351376312221566
+          },
+          {
+            "ts": 1767231780000,
+            "actual": 50.765067072585225,
+            "label": false,
+            "detected": false,
+            "z": 1.3801515389354477
+          },
+          {
+            "ts": 1767231840000,
+            "actual": 49.232097015529874,
+            "label": false,
+            "detected": false,
+            "z": -1.7247311810002603
+          },
+          {
+            "ts": 1767231900000,
+            "actual": 49.507296211272475,
+            "label": false,
+            "detected": false,
+            "z": -1.1673418024740265
+          },
+          {
+            "ts": 1767231960000,
+            "actual": 49.440362847596404,
+            "label": false,
+            "detected": false,
+            "z": -1.3029088628406216
+          },
+          {
+            "ts": 1767232020000,
+            "actual": 49.67641004696488,
+            "label": false,
+            "detected": false,
+            "z": -0.8248180697195762
+          },
+          {
+            "ts": 1767232080000,
+            "actual": 50.74071878194809,
+            "label": false,
+            "detected": false,
+            "z": 1.3308364290210177
+          },
+          {
+            "ts": 1767232140000,
+            "actual": 49.21010090969503,
+            "label": false,
+            "detected": false,
+            "z": -1.7692821678888582
+          },
+          {
+            "ts": 1767232200000,
+            "actual": 49.872145891934636,
+            "label": false,
+            "detected": false,
+            "z": -0.4283740296539852
+          },
+          {
+            "ts": 1767232260000,
+            "actual": 49.374628179892895,
+            "label": false,
+            "detected": false,
+            "z": -1.4360480803445763
+          },
+          {
+            "ts": 1767232320000,
+            "actual": 67.86215096898377,
+            "label": true,
+            "detected": true,
+            "z": 36.008642882848356
+          },
+          {
+            "ts": 1767232380000,
+            "actual": 50.31138386689126,
+            "label": false,
+            "detected": false,
+            "z": 0.4612600451315596
+          },
+          {
+            "ts": 1767232440000,
+            "actual": 50.621272868290546,
+            "label": false,
+            "detected": false,
+            "z": 1.0889102729455196
+          },
+          {
+            "ts": 1767232500000,
+            "actual": 49.58474566973746,
+            "label": false,
+            "detected": false,
+            "z": -1.0104754082809002
+          },
+          {
+            "ts": 1767232560000,
+            "actual": 50.51707150116563,
+            "label": false,
+            "detected": false,
+            "z": 0.8778604727939802
+          },
+          {
+            "ts": 1767232620000,
+            "actual": 49.378381793573496,
+            "label": false,
+            "detected": false,
+            "z": -1.4284454985455555
+          },
+          {
+            "ts": 1767232680000,
+            "actual": 50.49998387172818,
+            "label": false,
+            "detected": false,
+            "z": 0.8432511305430889
+          },
+          {
+            "ts": 1767232740000,
+            "actual": 50.00789890997112,
+            "label": false,
+            "detected": false,
+            "z": -0.15341940941160562
+          }
+        ],
+        "precision": 1,
+        "recall": 1
+      },
+      "rows": [
+        {
+          "ts": 1767225600000,
+          "y": 50.21065636053682,
+          "isAnomaly": false,
+          "index": 0
+        },
+        {
+          "ts": 1767225660000,
+          "y": 50.65352259278298,
+          "isAnomaly": false,
+          "index": 1
+        },
+        {
+          "ts": 1767225720000,
+          "y": 50.549731532111764,
+          "isAnomaly": false,
+          "index": 2
+        },
+        {
+          "ts": 1767225780000,
+          "y": 50.06824881918728,
+          "isAnomaly": false,
+          "index": 3
+        },
+        {
+          "ts": 1767225840000,
+          "y": 49.765085042640564,
+          "isAnomaly": false,
+          "index": 4
+        },
+        {
+          "ts": 1767225900000,
+          "y": 50.2225486356765,
+          "isAnomaly": false,
+          "index": 5
+        },
+        {
+          "ts": 1767225960000,
+          "y": 50.77662916220724,
+          "isAnomaly": false,
+          "index": 6
+        },
+        {
+          "ts": 1767226020000,
+          "y": 50.496755653619765,
+          "isAnomaly": false,
+          "index": 7
+        },
+        {
+          "ts": 1767226080000,
+          "y": 49.5109396353364,
+          "isAnomaly": false,
+          "index": 8
+        },
+        {
+          "ts": 1767226140000,
+          "y": 49.71634403541684,
+          "isAnomaly": false,
+          "index": 9
+        },
+        {
+          "ts": 1767226200000,
+          "y": 49.810961063951254,
+          "isAnomaly": false,
+          "index": 10
+        },
+        {
+          "ts": 1767226260000,
+          "y": 50.17116931937635,
+          "isAnomaly": false,
+          "index": 11
+        },
+        {
+          "ts": 1767226320000,
+          "y": 50.735133200883865,
+          "isAnomaly": false,
+          "index": 12
+        },
+        {
+          "ts": 1767226380000,
+          "y": 50.193494722992185,
+          "isAnomaly": false,
+          "index": 13
+        },
+        {
+          "ts": 1767226440000,
+          "y": 50.58616357557476,
+          "isAnomaly": false,
+          "index": 14
+        },
+        {
+          "ts": 1767226500000,
+          "y": 49.64336734935641,
+          "isAnomaly": false,
+          "index": 15
+        },
+        {
+          "ts": 1767226560000,
+          "y": 50.58098280392587,
+          "isAnomaly": false,
+          "index": 16
+        },
+        {
+          "ts": 1767226620000,
+          "y": 50.57130779251456,
+          "isAnomaly": false,
+          "index": 17
+        },
+        {
+          "ts": 1767226680000,
+          "y": 50.396309573948386,
+          "isAnomaly": false,
+          "index": 18
+        },
+        {
+          "ts": 1767226740000,
+          "y": 49.32994994558394,
+          "isAnomaly": false,
+          "index": 19
+        },
+        {
+          "ts": 1767226800000,
+          "y": 49.435240463539955,
+          "isAnomaly": false,
+          "index": 20
+        },
+        {
+          "ts": 1767226860000,
+          "y": 49.52199513092637,
+          "isAnomaly": false,
+          "index": 21
+        },
+        {
+          "ts": 1767226920000,
+          "y": 49.90503907874226,
+          "isAnomaly": false,
+          "index": 22
+        },
+        {
+          "ts": 1767226980000,
+          "y": 49.5973490819335,
+          "isAnomaly": false,
+          "index": 23
+        },
+        {
+          "ts": 1767227040000,
+          "y": 49.28067768961191,
+          "isAnomaly": false,
+          "index": 24
+        },
+        {
+          "ts": 1767227100000,
+          "y": 50.37314603254199,
+          "isAnomaly": false,
+          "index": 25
+        },
+        {
+          "ts": 1767227160000,
+          "y": 49.91390395127237,
+          "isAnomaly": false,
+          "index": 26
+        },
+        {
+          "ts": 1767227220000,
+          "y": 49.20542745143175,
+          "isAnomaly": false,
+          "index": 27
+        },
+        {
+          "ts": 1767227280000,
+          "y": 50.656784529983995,
+          "isAnomaly": false,
+          "index": 28
+        },
+        {
+          "ts": 1767227340000,
+          "y": 50.630530554428695,
+          "isAnomaly": false,
+          "index": 29
+        },
+        {
+          "ts": 1767227400000,
+          "y": 49.26246783770621,
+          "isAnomaly": false,
+          "index": 30
+        },
+        {
+          "ts": 1767227460000,
+          "y": 49.75612741187215,
+          "isAnomaly": false,
+          "index": 31
+        },
+        {
+          "ts": 1767227520000,
+          "y": 50.71717696413398,
+          "isAnomaly": false,
+          "index": 32
+        },
+        {
+          "ts": 1767227580000,
+          "y": 49.308725917711854,
+          "isAnomaly": false,
+          "index": 33
+        },
+        {
+          "ts": 1767227640000,
+          "y": 49.5467756677419,
+          "isAnomaly": false,
+          "index": 34
+        },
+        {
+          "ts": 1767227700000,
+          "y": 49.378004261106256,
+          "isAnomaly": false,
+          "index": 35
+        },
+        {
+          "ts": 1767227760000,
+          "y": 50.434266813099384,
+          "isAnomaly": false,
+          "index": 36
+        },
+        {
+          "ts": 1767227820000,
+          "y": 49.789844912290576,
+          "isAnomaly": false,
+          "index": 37
+        },
+        {
+          "ts": 1767227880000,
+          "y": 50.21958881728351,
+          "isAnomaly": false,
+          "index": 38
+        },
+        {
+          "ts": 1767227940000,
+          "y": 50.61640000641346,
+          "isAnomaly": false,
+          "index": 39
+        },
+        {
+          "ts": 1767228000000,
+          "y": 50.37871568761766,
+          "isAnomaly": false,
+          "index": 40
+        },
+        {
+          "ts": 1767228060000,
+          "y": 50.69101862870157,
+          "isAnomaly": false,
+          "index": 41
+        },
+        {
+          "ts": 1767228120000,
+          "y": 49.61598374843597,
+          "isAnomaly": false,
+          "index": 42
+        },
+        {
+          "ts": 1767228180000,
+          "y": 49.21507654003799,
+          "isAnomaly": false,
+          "index": 43
+        },
+        {
+          "ts": 1767228240000,
+          "y": 49.78537228107452,
+          "isAnomaly": false,
+          "index": 44
+        },
+        {
+          "ts": 1767228300000,
+          "y": 50.14139957427979,
+          "isAnomaly": false,
+          "index": 45
+        },
+        {
+          "ts": 1767228360000,
+          "y": 49.763643556460735,
+          "isAnomaly": false,
+          "index": 46
+        },
+        {
+          "ts": 1767228420000,
+          "y": 50.15707038938999,
+          "isAnomaly": false,
+          "index": 47
+        },
+        {
+          "ts": 1767228480000,
+          "y": 50.64973493739963,
+          "isAnomaly": false,
+          "index": 48
+        },
+        {
+          "ts": 1767228540000,
+          "y": 49.49839787967503,
+          "isAnomaly": false,
+          "index": 49
+        },
+        {
+          "ts": 1767228600000,
+          "y": 50.13968754783273,
+          "isAnomaly": false,
+          "index": 50
+        },
+        {
+          "ts": 1767228660000,
+          "y": 49.23934578560293,
+          "isAnomaly": false,
+          "index": 51
+        },
+        {
+          "ts": 1767228720000,
+          "y": 50.535482629016045,
+          "isAnomaly": false,
+          "index": 52
+        },
+        {
+          "ts": 1767228780000,
+          "y": 50.31640449985862,
+          "isAnomaly": false,
+          "index": 53
+        },
+        {
+          "ts": 1767228840000,
+          "y": 50.264313919469714,
+          "isAnomaly": false,
+          "index": 54
+        },
+        {
+          "ts": 1767228900000,
+          "y": 50.17372854463756,
+          "isAnomaly": false,
+          "index": 55
+        },
+        {
+          "ts": 1767228960000,
+          "y": 49.503489105030894,
+          "isAnomaly": false,
+          "index": 56
+        },
+        {
+          "ts": 1767229020000,
+          "y": 49.7737328954041,
+          "isAnomaly": false,
+          "index": 57
+        },
+        {
+          "ts": 1767229080000,
+          "y": 50.42901815287769,
+          "isAnomaly": false,
+          "index": 58
+        },
+        {
+          "ts": 1767229140000,
+          "y": 50.14421563409269,
+          "isAnomaly": false,
+          "index": 59
+        },
+        {
+          "ts": 1767229200000,
+          "y": 49.78248414024711,
+          "isAnomaly": false,
+          "index": 60
+        },
+        {
+          "ts": 1767229260000,
+          "y": 50.1587673727423,
+          "isAnomaly": false,
+          "index": 61
+        },
+        {
+          "ts": 1767229320000,
+          "y": 49.427080969139936,
+          "isAnomaly": false,
+          "index": 62
+        },
+        {
+          "ts": 1767229380000,
+          "y": 50.770500210300085,
+          "isAnomaly": false,
+          "index": 63
+        },
+        {
+          "ts": 1767229440000,
+          "y": 50.228815763443706,
+          "isAnomaly": false,
+          "index": 64
+        },
+        {
+          "ts": 1767229500000,
+          "y": 50.11743541434407,
+          "isAnomaly": false,
+          "index": 65
+        },
+        {
+          "ts": 1767229560000,
+          "y": 49.30765660330653,
+          "isAnomaly": false,
+          "index": 66
+        },
+        {
+          "ts": 1767229620000,
+          "y": 49.9037548802793,
+          "isAnomaly": false,
+          "index": 67
+        },
+        {
+          "ts": 1767229680000,
+          "y": 49.8571320079267,
+          "isAnomaly": false,
+          "index": 68
+        },
+        {
+          "ts": 1767229740000,
+          "y": 49.67281089872122,
+          "isAnomaly": false,
+          "index": 69
+        },
+        {
+          "ts": 1767229800000,
+          "y": 50.222832473367454,
+          "isAnomaly": false,
+          "index": 70
+        },
+        {
+          "ts": 1767229860000,
+          "y": 50.69315132796764,
+          "isAnomaly": false,
+          "index": 71
+        },
+        {
+          "ts": 1767229920000,
+          "y": 49.52908164709807,
+          "isAnomaly": false,
+          "index": 72
+        },
+        {
+          "ts": 1767229980000,
+          "y": 50.756889932230116,
+          "isAnomaly": false,
+          "index": 73
+        },
+        {
+          "ts": 1767230040000,
+          "y": 49.6259507663548,
+          "isAnomaly": false,
+          "index": 74
+        },
+        {
+          "ts": 1767230100000,
+          "y": 50.55491768456996,
+          "isAnomaly": false,
+          "index": 75
+        },
+        {
+          "ts": 1767230160000,
+          "y": 49.76862392090261,
+          "isAnomaly": false,
+          "index": 76
+        },
+        {
+          "ts": 1767230220000,
+          "y": 49.25475000925362,
+          "isAnomaly": false,
+          "index": 77
+        },
+        {
+          "ts": 1767230280000,
+          "y": 49.97921137921512,
+          "isAnomaly": false,
+          "index": 78
+        },
+        {
+          "ts": 1767230340000,
+          "y": 50.15509372241795,
+          "isAnomaly": false,
+          "index": 79
+        },
+        {
+          "ts": 1767230400000,
+          "y": 49.35336899645627,
+          "isAnomaly": false,
+          "index": 80
+        },
+        {
+          "ts": 1767230460000,
+          "y": 50.49726468250155,
+          "isAnomaly": false,
+          "index": 81
+        },
+        {
+          "ts": 1767230520000,
+          "y": 49.35493104159832,
+          "isAnomaly": false,
+          "index": 82
+        },
+        {
+          "ts": 1767230580000,
+          "y": 68.55087000392378,
+          "isAnomaly": true,
+          "index": 83
+        },
+        {
+          "ts": 1767230640000,
+          "y": 49.41615058034658,
+          "isAnomaly": false,
+          "index": 84
+        },
+        {
+          "ts": 1767230700000,
+          "y": 50.57967632077634,
+          "isAnomaly": false,
+          "index": 85
+        },
+        {
+          "ts": 1767230760000,
+          "y": 50.106469221413136,
+          "isAnomaly": false,
+          "index": 86
+        },
+        {
+          "ts": 1767230820000,
+          "y": 49.63499898724258,
+          "isAnomaly": false,
+          "index": 87
+        },
+        {
+          "ts": 1767230880000,
+          "y": 50.77881620824337,
+          "isAnomaly": false,
+          "index": 88
+        },
+        {
+          "ts": 1767230940000,
+          "y": 50.55961533002555,
+          "isAnomaly": false,
+          "index": 89
+        },
+        {
+          "ts": 1767231000000,
+          "y": 50.32231146655977,
+          "isAnomaly": false,
+          "index": 90
+        },
+        {
+          "ts": 1767231060000,
+          "y": 49.99405925758183,
+          "isAnomaly": false,
+          "index": 91
+        },
+        {
+          "ts": 1767231120000,
+          "y": 50.20611601136625,
+          "isAnomaly": false,
+          "index": 92
+        },
+        {
+          "ts": 1767231180000,
+          "y": 50.624058727175,
+          "isAnomaly": false,
+          "index": 93
+        },
+        {
+          "ts": 1767231240000,
+          "y": 49.99108391031623,
+          "isAnomaly": false,
+          "index": 94
+        },
+        {
+          "ts": 1767231300000,
+          "y": 50.43325027786195,
+          "isAnomaly": false,
+          "index": 95
+        },
+        {
+          "ts": 1767231360000,
+          "y": 50.66919460333884,
+          "isAnomaly": false,
+          "index": 96
+        },
+        {
+          "ts": 1767231420000,
+          "y": 49.347518721222876,
+          "isAnomaly": false,
+          "index": 97
+        },
+        {
+          "ts": 1767231480000,
+          "y": 50.55490842871368,
+          "isAnomaly": false,
+          "index": 98
+        },
+        {
+          "ts": 1767231540000,
+          "y": 68.51308812722564,
+          "isAnomaly": true,
+          "index": 99
+        },
+        {
+          "ts": 1767231600000,
+          "y": 50.450425358489156,
+          "isAnomaly": false,
+          "index": 100
+        },
+        {
+          "ts": 1767231660000,
+          "y": 49.74610302373767,
+          "isAnomaly": false,
+          "index": 101
+        },
+        {
+          "ts": 1767231720000,
+          "y": 49.523196338489655,
+          "isAnomaly": false,
+          "index": 102
+        },
+        {
+          "ts": 1767231780000,
+          "y": 50.765067072585225,
+          "isAnomaly": false,
+          "index": 103
+        },
+        {
+          "ts": 1767231840000,
+          "y": 49.232097015529874,
+          "isAnomaly": false,
+          "index": 104
+        },
+        {
+          "ts": 1767231900000,
+          "y": 49.507296211272475,
+          "isAnomaly": false,
+          "index": 105
+        },
+        {
+          "ts": 1767231960000,
+          "y": 49.440362847596404,
+          "isAnomaly": false,
+          "index": 106
+        },
+        {
+          "ts": 1767232020000,
+          "y": 49.67641004696488,
+          "isAnomaly": false,
+          "index": 107
+        },
+        {
+          "ts": 1767232080000,
+          "y": 50.74071878194809,
+          "isAnomaly": false,
+          "index": 108
+        },
+        {
+          "ts": 1767232140000,
+          "y": 49.21010090969503,
+          "isAnomaly": false,
+          "index": 109
+        },
+        {
+          "ts": 1767232200000,
+          "y": 49.872145891934636,
+          "isAnomaly": false,
+          "index": 110
+        },
+        {
+          "ts": 1767232260000,
+          "y": 49.374628179892895,
+          "isAnomaly": false,
+          "index": 111
+        },
+        {
+          "ts": 1767232320000,
+          "y": 67.86215096898377,
+          "isAnomaly": true,
+          "index": 112
+        },
+        {
+          "ts": 1767232380000,
+          "y": 50.31138386689126,
+          "isAnomaly": false,
+          "index": 113
+        },
+        {
+          "ts": 1767232440000,
+          "y": 50.621272868290546,
+          "isAnomaly": false,
+          "index": 114
+        },
+        {
+          "ts": 1767232500000,
+          "y": 49.58474566973746,
+          "isAnomaly": false,
+          "index": 115
+        },
+        {
+          "ts": 1767232560000,
+          "y": 50.51707150116563,
+          "isAnomaly": false,
+          "index": 116
+        },
+        {
+          "ts": 1767232620000,
+          "y": 49.378381793573496,
+          "isAnomaly": false,
+          "index": 117
+        },
+        {
+          "ts": 1767232680000,
+          "y": 50.49998387172818,
+          "isAnomaly": false,
+          "index": 118
+        },
+        {
+          "ts": 1767232740000,
+          "y": 50.00789890997112,
+          "isAnomaly": false,
+          "index": 119
+        }
+      ]
+    },
+    {
+      "id": "gaps",
+      "name": "Пропуски",
+      "seed": 91006,
+      "trainPoints": 72,
+      "testPoints": 48,
+      "unit": "ум. од.",
+      "byHorizon": [
+        {
+          "horizon": 1,
+          "n": 5,
+          "mae": 1.113023969567574,
+          "rmse": 1.8690839087918887,
+          "bias": -0.9250255743491393,
+          "naiveRmse": 0.7475533175452348,
+          "intervalN": 5,
+          "coverage": 80,
+          "samples": [
+            {
+              "originTs": 1767229860000,
+              "trainTo": 1767229860000,
+              "targetTs": 1767229920000,
+              "actual": 48.05690940499306,
+              "predicted": 48.05162400081306,
+              "naive": 49.05716027867683,
+              "model": "ar2",
+              "lower": 43.498561944017624,
+              "upper": 52.60468605760849,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230220000,
+              "trainTo": 1767230220000,
+              "targetTs": 1767230280000,
+              "actual": 45.6786770090628,
+              "predicted": 45.806987424637285,
+              "naive": 45.244023961960515,
+              "model": "ar2",
+              "lower": 41.476907455322674,
+              "upper": 50.137067393951895,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230940000,
+              "trainTo": 1767230940000,
+              "targetTs": 1767231000000,
+              "actual": 45.93476210946028,
+              "predicted": 46.276447681931884,
+              "naive": 46.642871152342465,
+              "model": "linear",
+              "lower": 44.33767688206386,
+              "upper": 48.21521848179991,
+              "intervalMethod": "conditional-student-t",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231300000,
+              "trainTo": 1767231300000,
+              "targetTs": 1767231360000,
+              "actual": 48.055477976985266,
+              "predicted": 44.03054101115492,
+              "naive": 47.04224961339793,
+              "model": "linear",
+              "lower": 40.51966550551722,
+              "upper": 47.541416516792616,
+              "intervalMethod": "observed-error-envelope",
+              "nominalCoverage": null
+            },
+            {
+              "originTs": 1767232020000,
+              "trainTo": 1767232020000,
+              "targetTs": 1767232080000,
+              "actual": 45.0183454753831,
+              "predicted": 43.953443985601666,
+              "naive": 45.29530142461434,
+              "model": "linear",
+              "lower": 42.81558889195261,
+              "upper": 45.091299079250724,
+              "intervalMethod": "conditional-student-t",
+              "nominalCoverage": 0.95
+            }
+          ],
+          "skipped": [
+            {
+              "originTs": 1767230580000,
+              "reason": "Пропуск у початку або цілі"
+            },
+            {
+              "originTs": 1767231660000,
+              "reason": "Пропуск у початку або цілі"
+            }
+          ]
+        },
+        {
+          "horizon": 5,
+          "n": 4,
+          "mae": 5.322847796826656,
+          "rmse": 6.358489057201029,
+          "bias": -4.91949917001085,
+          "naiveRmse": 3.172707956657616,
+          "intervalN": 4,
+          "coverage": 25,
+          "samples": [
+            {
+              "originTs": 1767229860000,
+              "trainTo": 1767229860000,
+              "targetTs": 1767230160000,
+              "actual": 45.074637497216465,
+              "predicted": 45.881334750848076,
+              "naive": 49.05716027867683,
+              "model": "ar2",
+              "lower": 36.678090326353484,
+              "upper": 55.08457917534267,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230940000,
+              "trainTo": 1767230940000,
+              "targetTs": 1767231240000,
+              "actual": 45.896625981459366,
+              "predicted": 42.789964373965326,
+              "naive": 46.642871152342465,
+              "model": "linear",
+              "lower": 39.819821435542785,
+              "upper": 45.760107312387866,
+              "intervalMethod": "conditional-student-t",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231300000,
+              "trainTo": 1767231300000,
+              "targetTs": 1767231600000,
+              "actual": 51.0342247069627,
+              "predicted": 41.88617597705845,
+              "naive": 47.04224961339793,
+              "model": "linear",
+              "lower": 38.09846962431323,
+              "upper": 45.67388232980367,
+              "intervalMethod": "conditional-student-t",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767232020000,
+              "trainTo": 1767232020000,
+              "targetTs": 1767232320000,
+              "actual": 48.10796358089893,
+              "predicted": 39.877979984622215,
+              "naive": 45.29530142461434,
+              "model": "linear",
+              "lower": 38.134817630629705,
+              "upper": 41.621142338614725,
+              "intervalMethod": "conditional-student-t",
+              "nominalCoverage": 0.95
+            }
+          ],
+          "skipped": [
+            {
+              "originTs": 1767230220000,
+              "reason": "Пропуск у початку або цілі"
+            },
+            {
+              "originTs": 1767230580000,
+              "reason": "Пропуск у початку або цілі"
+            },
+            {
+              "originTs": 1767231660000,
+              "reason": "Пропуск у початку або цілі"
+            }
+          ]
+        },
+        {
+          "horizon": 10,
+          "n": 5,
+          "mae": 7.3047841107386535,
+          "rmse": 9.567021676107629,
+          "bias": -7.3047841107386535,
+          "naiveRmse": 3.495262883238361,
+          "intervalN": 5,
+          "coverage": 40,
+          "samples": [
+            {
+              "originTs": 1767229860000,
+              "trainTo": 1767229860000,
+              "targetTs": 1767230460000,
+              "actual": 49.23007647324987,
+              "predicted": 48.767437708283666,
+              "naive": 49.05716027867683,
+              "model": "ar2",
+              "lower": 35.66333276570872,
+              "upper": 61.871542650858615,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230220000,
+              "trainTo": 1767230220000,
+              "targetTs": 1767230820000,
+              "actual": 49.24961077228824,
+              "predicted": 48.766352935942834,
+              "naive": 45.244023961960515,
+              "model": "ar2",
+              "lower": 39.36486280709734,
+              "upper": 58.16784306478833,
+              "intervalMethod": "empirical-95",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767230940000,
+              "trainTo": 1767230940000,
+              "targetTs": 1767231540000,
+              "actual": 50.716046912432475,
+              "predicted": 38.431860239007136,
+              "naive": 46.642871152342465,
+              "model": "linear",
+              "lower": 33.923159949291666,
+              "upper": 42.94056052872261,
+              "intervalMethod": "conditional-student-t",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767231300000,
+              "trainTo": 1767231300000,
+              "targetTs": 1767231900000,
+              "actual": 46.669979111434124,
+              "predicted": 39.20571968443787,
+              "naive": 47.04224961339793,
+              "model": "linear",
+              "lower": 34.58183505448932,
+              "upper": 43.829604314386415,
+              "intervalMethod": "conditional-student-t",
+              "nominalCoverage": 0.95
+            },
+            {
+              "originTs": 1767232020000,
+              "trainTo": 1767232020000,
+              "targetTs": 1767232620000,
+              "actual": 50.61322783535795,
+              "predicted": 34.78364998339789,
+              "naive": 45.29530142461434,
+              "model": "linear",
+              "lower": 32.13751584998771,
+              "upper": 37.42978411680808,
+              "intervalMethod": "conditional-student-t",
+              "nominalCoverage": 0.95
+            }
+          ],
+          "skipped": [
+            {
+              "originTs": 1767230580000,
+              "reason": "Пропуск у початку або цілі"
+            },
+            {
+              "originTs": 1767231660000,
+              "reason": "Пропуск у початку або цілі"
+            }
+          ]
+        }
+      ],
+      "anomalies": null,
+      "rows": [
+        {
+          "ts": 1767225600000,
+          "y": 48.06322346907109,
+          "isAnomaly": false,
+          "index": 0
+        },
+        {
+          "ts": 1767225660000,
+          "y": 49.33666915946343,
+          "isAnomaly": false,
+          "index": 1
+        },
+        {
+          "ts": 1767225720000,
+          "y": 50.068127766570115,
+          "isAnomaly": false,
+          "index": 2
+        },
+        {
+          "ts": 1767225780000,
+          "y": 51.00254446281568,
+          "isAnomaly": false,
+          "index": 3
+        },
+        {
+          "ts": 1767225840000,
+          "y": 50.86336572378874,
+          "isAnomaly": false,
+          "index": 4
+        },
+        {
+          "ts": 1767225900000,
+          "y": 50.89003274536208,
+          "isAnomaly": false,
+          "index": 5
+        },
+        {
+          "ts": 1767225960000,
+          "y": 49.97463853674199,
+          "isAnomaly": false,
+          "index": 6
+        },
+        {
+          "ts": 1767226020000,
+          "y": 49.15752330367157,
+          "isAnomaly": false,
+          "index": 7
+        },
+        {
+          "ts": 1767226080000,
+          "y": 47.787665989436206,
+          "isAnomaly": false,
+          "index": 8
+        },
+        {
+          "ts": 1767226140000,
+          "y": 46.937796410986394,
+          "isAnomaly": false,
+          "index": 9
+        },
+        {
+          "ts": 1767226200000,
+          "y": 45.98104228222552,
+          "isAnomaly": false,
+          "index": 10
+        },
+        {
+          "ts": 1767226260000,
+          "y": 45.10285878059938,
+          "isAnomaly": false,
+          "index": 11
+        },
+        {
+          "ts": 1767226320000,
+          "y": 44.932713055349886,
+          "isAnomaly": false,
+          "index": 12
+        },
+        {
+          "ts": 1767226380000,
+          "y": 45.05989154489263,
+          "isAnomaly": false,
+          "index": 13
+        },
+        {
+          "ts": 1767226440000,
+          "y": 46.05089871382151,
+          "isAnomaly": false,
+          "index": 14
+        },
+        {
+          "ts": 1767226500000,
+          "y": 46.621388269582,
+          "isAnomaly": false,
+          "index": 15
+        },
+        {
+          "ts": 1767226560000,
+          "y": 47.772906776368615,
+          "isAnomaly": false,
+          "index": 16
+        },
+        {
+          "ts": 1767226620000,
+          "y": 49.054428544348866,
+          "isAnomaly": false,
+          "index": 17
+        },
+        {
+          "ts": 1767226680000,
+          "y": 50.22292315596905,
+          "isAnomaly": false,
+          "index": 18
+        },
+        {
+          "ts": 1767226740000,
+          "y": 50.943261077427124,
+          "isAnomaly": false,
+          "index": 19
+        },
+        {
+          "ts": 1767226800000,
+          "y": 50.96485773146153,
+          "isAnomaly": false,
+          "index": 20
+        },
+        {
+          "ts": 1767226860000,
+          "y": 50.70167640062497,
+          "isAnomaly": false,
+          "index": 21
+        },
+        {
+          "ts": 1767226920000,
+          "y": 50.231568659825285,
+          "isAnomaly": false,
+          "index": 22
+        },
+        {
+          "ts": 1767226980000,
+          "y": 49.01057713699231,
+          "isAnomaly": false,
+          "index": 23
+        },
+        {
+          "ts": 1767227040000,
+          "y": 47.990348079912366,
+          "isAnomaly": false,
+          "index": 24
+        },
+        {
+          "ts": 1767227100000,
+          "y": 46.91996139540634,
+          "isAnomaly": false,
+          "index": 25
+        },
+        {
+          "ts": 1767227160000,
+          "y": 46.067452722022274,
+          "isAnomaly": false,
+          "index": 26
+        },
+        {
+          "ts": 1767227220000,
+          "y": 45.24419496563747,
+          "isAnomaly": false,
+          "index": 27
+        },
+        {
+          "ts": 1767227280000,
+          "y": 45.00600431609899,
+          "isAnomaly": false,
+          "index": 28
+        },
+        {
+          "ts": 1767227340000,
+          "y": 45.326276650219405,
+          "isAnomaly": false,
+          "index": 29
+        },
+        {
+          "ts": 1767227400000,
+          "y": 46.063852338211575,
+          "isAnomaly": false,
+          "index": 30
+        },
+        {
+          "ts": 1767227460000,
+          "y": 46.61957670203706,
+          "isAnomaly": false,
+          "index": 31
+        },
+        {
+          "ts": 1767227520000,
+          "y": 48.22338373191655,
+          "isAnomaly": false,
+          "index": 32
+        },
+        {
+          "ts": 1767227580000,
+          "y": 49.006388110338534,
+          "isAnomaly": false,
+          "index": 33
+        },
+        {
+          "ts": 1767227640000,
+          "y": 50.1073157989439,
+          "isAnomaly": false,
+          "index": 34
+        },
+        {
+          "ts": 1767227700000,
+          "y": 50.628236070857206,
+          "isAnomaly": false,
+          "index": 35
+        },
+        {
+          "ts": 1767227760000,
+          "y": 51.12465758219361,
+          "isAnomaly": false,
+          "index": 36
+        },
+        {
+          "ts": 1767227820000,
+          "y": 50.69936731124744,
+          "isAnomaly": false,
+          "index": 37
+        },
+        {
+          "ts": 1767227880000,
+          "y": 50.29349201882448,
+          "isAnomaly": false,
+          "index": 38
+        },
+        {
+          "ts": 1767227940000,
+          "y": 49.12714747232089,
+          "isAnomaly": false,
+          "index": 39
+        },
+        {
+          "ts": 1767228000000,
+          "y": 48.19682417146861,
+          "isAnomaly": false,
+          "index": 40
+        },
+        {
+          "ts": 1767228060000,
+          "y": 47.0536392287474,
+          "isAnomaly": false,
+          "index": 41
+        },
+        {
+          "ts": 1767228120000,
+          "y": 46.08267281247113,
+          "isAnomaly": false,
+          "index": 42
+        },
+        {
+          "ts": 1767228180000,
+          "y": 45.21397353017255,
+          "isAnomaly": false,
+          "index": 43
+        },
+        {
+          "ts": 1767228240000,
+          "y": 44.90604563232511,
+          "isAnomaly": false,
+          "index": 44
+        },
+        {
+          "ts": 1767228300000,
+          "y": 45.02050862634107,
+          "isAnomaly": false,
+          "index": 45
+        },
+        {
+          "ts": 1767228360000,
+          "y": 45.750228712091186,
+          "isAnomaly": false,
+          "index": 46
+        },
+        {
+          "ts": 1767228420000,
+          "y": 46.72010060559324,
+          "isAnomaly": false,
+          "index": 47
+        },
+        {
+          "ts": 1767228480000,
+          "y": 47.81020181167871,
+          "isAnomaly": false,
+          "index": 48
+        },
+        {
+          "ts": 1767228540000,
+          "y": 49.09742089056113,
+          "isAnomaly": false,
+          "index": 49
+        },
+        {
+          "ts": 1767228600000,
+          "y": 50.12185119865652,
+          "isAnomaly": false,
+          "index": 50
+        },
+        {
+          "ts": 1767228660000,
+          "y": 50.73593290819303,
+          "isAnomaly": false,
+          "index": 51
+        },
+        {
+          "ts": 1767228720000,
+          "y": 51.00704809661955,
+          "isAnomaly": false,
+          "index": 52
+        },
+        {
+          "ts": 1767228780000,
+          "y": 50.774053496816016,
+          "isAnomaly": false,
+          "index": 53
+        },
+        {
+          "ts": 1767228840000,
+          "y": 50.012185337489505,
+          "isAnomaly": false,
+          "index": 54
+        },
+        {
+          "ts": 1767228900000,
+          "y": 48.99247002963611,
+          "isAnomaly": false,
+          "index": 55
+        },
+        {
+          "ts": 1767228960000,
+          "y": 47.821255971081555,
+          "isAnomaly": false,
+          "index": 56
+        },
+        {
+          "ts": 1767229020000,
+          "y": 46.95665065079294,
+          "isAnomaly": false,
+          "index": 57
+        },
+        {
+          "ts": 1767229080000,
+          "y": 45.64829366998557,
+          "isAnomaly": false,
+          "index": 58
+        },
+        {
+          "ts": 1767229140000,
+          "y": 45.10453704302683,
+          "isAnomaly": false,
+          "index": 59
+        },
+        {
+          "ts": 1767229200000,
+          "y": 44.93171296902001,
+          "isAnomaly": false,
+          "index": 60
+        },
+        {
+          "ts": 1767229260000,
+          "y": 45.26862930537685,
+          "isAnomaly": false,
+          "index": 61
+        },
+        {
+          "ts": 1767229320000,
+          "y": 45.94530898893062,
+          "isAnomaly": false,
+          "index": 62
+        },
+        {
+          "ts": 1767229380000,
+          "y": 46.87913921411446,
+          "isAnomaly": false,
+          "index": 63
+        },
+        {
+          "ts": 1767229440000,
+          "y": 47.909012386500834,
+          "isAnomaly": false,
+          "index": 64
+        },
+        {
+          "ts": 1767229500000,
+          "y": 48.97736461681016,
+          "isAnomaly": false,
+          "index": 65
+        },
+        {
+          "ts": 1767229560000,
+          "y": 50.1525388273057,
+          "isAnomaly": false,
+          "index": 66
+        },
+        {
+          "ts": 1767229620000,
+          "y": 50.64351889571623,
+          "isAnomaly": false,
+          "index": 67
+        },
+        {
+          "ts": 1767229680000,
+          "y": 51.08590617500246,
+          "isAnomaly": false,
+          "index": 68
+        },
+        {
+          "ts": 1767229740000,
+          "y": 50.56162417406664,
+          "isAnomaly": false,
+          "index": 69
+        },
+        {
+          "ts": 1767229800000,
+          "y": 49.9708354501259,
+          "isAnomaly": false,
+          "index": 70
+        },
+        {
+          "ts": 1767229860000,
+          "y": 49.05716027867683,
+          "isAnomaly": false,
+          "index": 71
+        },
+        {
+          "ts": 1767229920000,
+          "y": 48.05690940499306,
+          "isAnomaly": false,
+          "index": 72
+        },
+        {
+          "ts": 1767229980000,
+          "y": 46.631487022780995,
+          "isAnomaly": false,
+          "index": 73
+        },
+        {
+          "ts": 1767230040000,
+          "y": 46.03539360234324,
+          "isAnomaly": false,
+          "index": 74
+        },
+        {
+          "ts": 1767230100000,
+          "y": 45.23026663174405,
+          "isAnomaly": false,
+          "index": 75
+        },
+        {
+          "ts": 1767230160000,
+          "y": 45.074637497216465,
+          "isAnomaly": false,
+          "index": 76
+        },
+        {
+          "ts": 1767230220000,
+          "y": 45.244023961960515,
+          "isAnomaly": false,
+          "index": 77
+        },
+        {
+          "ts": 1767230280000,
+          "y": 45.6786770090628,
+          "isAnomaly": false,
+          "index": 78
+        },
+        {
+          "ts": 1767230340000,
+          "y": 46.97932246013841,
+          "isAnomaly": false,
+          "index": 79
+        },
+        {
+          "ts": 1767230400000,
+          "y": 48.195048693269484,
+          "isAnomaly": false,
+          "index": 80
+        },
+        {
+          "ts": 1767230460000,
+          "y": 49.23007647324987,
+          "isAnomaly": false,
+          "index": 81
+        },
+        {
+          "ts": 1767230520000,
+          "y": null,
+          "isAnomaly": false,
+          "index": 82
+        },
+        {
+          "ts": 1767230580000,
+          "y": null,
+          "isAnomaly": false,
+          "index": 83
+        },
+        {
+          "ts": 1767230640000,
+          "y": 50.88634986218065,
+          "isAnomaly": false,
+          "index": 84
+        },
+        {
+          "ts": 1767230700000,
+          "y": 50.859422793374215,
+          "isAnomaly": false,
+          "index": 85
+        },
+        {
+          "ts": 1767230760000,
+          "y": 50.233521105593105,
+          "isAnomaly": false,
+          "index": 86
+        },
+        {
+          "ts": 1767230820000,
+          "y": 49.24961077228824,
+          "isAnomaly": false,
+          "index": 87
+        },
+        {
+          "ts": 1767230880000,
+          "y": 48.09094777263702,
+          "isAnomaly": false,
+          "index": 88
+        },
+        {
+          "ts": 1767230940000,
+          "y": 46.642871152342465,
+          "isAnomaly": false,
+          "index": 89
+        },
+        {
+          "ts": 1767231000000,
+          "y": 45.93476210946028,
+          "isAnomaly": false,
+          "index": 90
+        },
+        {
+          "ts": 1767231060000,
+          "y": 45.22089596798196,
+          "isAnomaly": false,
+          "index": 91
+        },
+        {
+          "ts": 1767231120000,
+          "y": 45.02066600639373,
+          "isAnomaly": false,
+          "index": 92
+        },
+        {
+          "ts": 1767231180000,
+          "y": 45.10368716163112,
+          "isAnomaly": false,
+          "index": 93
+        },
+        {
+          "ts": 1767231240000,
+          "y": 45.896625981459366,
+          "isAnomaly": false,
+          "index": 94
+        },
+        {
+          "ts": 1767231300000,
+          "y": 47.04224961339793,
+          "isAnomaly": false,
+          "index": 95
+        },
+        {
+          "ts": 1767231360000,
+          "y": 48.055477976985266,
+          "isAnomaly": false,
+          "index": 96
+        },
+        {
+          "ts": 1767231420000,
+          "y": 49.21348750681319,
+          "isAnomaly": false,
+          "index": 97
+        },
+        {
+          "ts": 1767231480000,
+          "y": 50.01004595460559,
+          "isAnomaly": false,
+          "index": 98
+        },
+        {
+          "ts": 1767231540000,
+          "y": 50.716046912432475,
+          "isAnomaly": false,
+          "index": 99
+        },
+        {
+          "ts": 1767231600000,
+          "y": 51.0342247069627,
+          "isAnomaly": false,
+          "index": 100
+        },
+        {
+          "ts": 1767231660000,
+          "y": null,
+          "isAnomaly": false,
+          "index": 101
+        },
+        {
+          "ts": 1767231720000,
+          "y": 50.03334939802256,
+          "isAnomaly": false,
+          "index": 102
+        },
+        {
+          "ts": 1767231780000,
+          "y": 49.35951800130944,
+          "isAnomaly": false,
+          "index": 103
+        },
+        {
+          "ts": 1767231840000,
+          "y": 47.95940029978751,
+          "isAnomaly": false,
+          "index": 104
+        },
+        {
+          "ts": 1767231900000,
+          "y": 46.669979111434124,
+          "isAnomaly": false,
+          "index": 105
+        },
+        {
+          "ts": 1767231960000,
+          "y": 45.7993016835842,
+          "isAnomaly": false,
+          "index": 106
+        },
+        {
+          "ts": 1767232020000,
+          "y": 45.29530142461434,
+          "isAnomaly": false,
+          "index": 107
+        },
+        {
+          "ts": 1767232080000,
+          "y": 45.0183454753831,
+          "isAnomaly": false,
+          "index": 108
+        },
+        {
+          "ts": 1767232140000,
+          "y": 45.339219969003636,
+          "isAnomaly": false,
+          "index": 109
+        },
+        {
+          "ts": 1767232200000,
+          "y": 45.95819141207073,
+          "isAnomaly": false,
+          "index": 110
+        },
+        {
+          "ts": 1767232260000,
+          "y": 47.03642918261996,
+          "isAnomaly": false,
+          "index": 111
+        },
+        {
+          "ts": 1767232320000,
+          "y": 48.10796358089893,
+          "isAnomaly": false,
+          "index": 112
+        },
+        {
+          "ts": 1767232380000,
+          "y": 49.20373894394078,
+          "isAnomaly": false,
+          "index": 113
+        },
+        {
+          "ts": 1767232440000,
+          "y": 49.96682340601648,
+          "isAnomaly": false,
+          "index": 114
+        },
+        {
+          "ts": 1767232500000,
+          "y": 50.91572767438815,
+          "isAnomaly": false,
+          "index": 115
+        },
+        {
+          "ts": 1767232560000,
+          "y": 51.03011049751192,
+          "isAnomaly": false,
+          "index": 116
+        },
+        {
+          "ts": 1767232620000,
+          "y": 50.61322783535795,
+          "isAnomaly": false,
+          "index": 117
+        },
+        {
+          "ts": 1767232680000,
+          "y": 50.220896238220895,
+          "isAnomaly": false,
+          "index": 118
+        },
+        {
+          "ts": 1767232740000,
+          "y": 49.2921896442462,
+          "isAnomaly": false,
+          "index": 119
+        }
+      ]
+    }
+  ],
+  "aggregate": [
+    {
+      "horizon": 1,
+      "n": 40,
+      "mae": 1.0778383011996655,
+      "rmse": 3.3483596694330804,
+      "bias": 0.055345810234253,
+      "naiveRmse": 3.351271412443329,
+      "intervalN": 40,
+      "coverage": 90
+    },
+    {
+      "horizon": 5,
+      "n": 39,
+      "mae": 1.9289879263768064,
+      "rmse": 4.755500121579777,
+      "bias": -0.6942967687251869,
+      "naiveRmse": 5.172526215890528,
+      "intervalN": 39,
+      "coverage": 84.61538461538461
+    },
+    {
+      "horizon": 10,
+      "n": 40,
+      "mae": 2.4544441876900973,
+      "rmse": 5.538041507180499,
+      "bias": -1.28052754218244,
+      "naiveRmse": 5.1412396037967145,
+      "intervalN": 40,
+      "coverage": 82.5
+    }
+  ],
+  "anomalies": {
+    "tp": 3,
+    "fp": 0,
+    "fn": 0,
+    "tn": 45,
+    "threshold": 3,
+    "baselineMean": 50.08364649273456,
+    "baselineSD": 0.49372881211020236,
+    "samples": [
+      {
+        "ts": 1767229920000,
+        "actual": 49.52908164709807,
+        "label": false,
+        "detected": false,
+        "z": -1.1232175073321633
+      },
+      {
+        "ts": 1767229980000,
+        "actual": 50.756889932230116,
+        "label": false,
+        "detected": false,
+        "z": 1.3635895313018247
+      },
+      {
+        "ts": 1767230040000,
+        "actual": 49.6259507663548,
+        "label": false,
+        "detected": false,
+        "z": -0.9270184667237961
+      },
+      {
+        "ts": 1767230100000,
+        "actual": 50.55491768456996,
+        "label": false,
+        "detected": false,
+        "z": 0.9545142602093255
+      },
+      {
+        "ts": 1767230160000,
+        "actual": 49.76862392090261,
+        "label": false,
+        "detected": false,
+        "z": -0.6380477786692986
+      },
+      {
+        "ts": 1767230220000,
+        "actual": 49.25475000925362,
+        "label": false,
+        "detected": false,
+        "z": -1.6788497311676556
+      },
+      {
+        "ts": 1767230280000,
+        "actual": 49.97921137921512,
+        "label": false,
+        "detected": false,
+        "z": -0.2115232308867682
+      },
+      {
+        "ts": 1767230340000,
+        "actual": 50.15509372241795,
+        "label": false,
+        "detected": false,
+        "z": 0.14470945979033914
+      },
+      {
+        "ts": 1767230400000,
+        "actual": 49.35336899645627,
+        "label": false,
+        "detected": false,
+        "z": -1.4791065021242664
+      },
+      {
+        "ts": 1767230460000,
+        "actual": 50.49726468250155,
+        "label": false,
+        "detected": false,
+        "z": 0.8377436755193284
+      },
+      {
+        "ts": 1767230520000,
+        "actual": 49.35493104159832,
+        "label": false,
+        "detected": false,
+        "z": -1.4759427306291908
+      },
+      {
+        "ts": 1767230580000,
+        "actual": 68.55087000392378,
+        "label": true,
+        "detected": true,
+        "z": 37.403576737318815
+      },
+      {
+        "ts": 1767230640000,
+        "actual": 49.41615058034658,
+        "label": false,
+        "detected": false,
+        "z": -1.3519484705279654
+      },
+      {
+        "ts": 1767230700000,
+        "actual": 50.57967632077634,
+        "label": false,
+        "detected": false,
+        "z": 1.0046604854226506
+      },
+      {
+        "ts": 1767230760000,
+        "actual": 50.106469221413136,
+        "label": false,
+        "detected": false,
+        "z": 0.04622523158215563
+      },
+      {
+        "ts": 1767230820000,
+        "actual": 49.63499898724258,
+        "label": false,
+        "detected": false,
+        "z": -0.9086921696435988
+      },
+      {
+        "ts": 1767230880000,
+        "actual": 50.77881620824337,
+        "label": false,
+        "detected": false,
+        "z": 1.4079990846344337
+      },
+      {
+        "ts": 1767230940000,
+        "actual": 50.55961533002555,
+        "label": false,
+        "detected": false,
+        "z": 0.9640288871469663
+      },
+      {
+        "ts": 1767231000000,
+        "actual": 50.32231146655977,
+        "label": false,
+        "detected": false,
+        "z": 0.483392842328063
+      },
+      {
+        "ts": 1767231060000,
+        "actual": 49.99405925758183,
+        "label": false,
+        "detected": false,
+        "z": -0.18145028800290294
+      },
+      {
+        "ts": 1767231120000,
+        "actual": 50.20611601136625,
+        "label": false,
+        "detected": false,
+        "z": 0.24805017578020866
+      },
+      {
+        "ts": 1767231180000,
+        "actual": 50.624058727175,
+        "label": false,
+        "detected": false,
+        "z": 1.0945527609189156
+      },
+      {
+        "ts": 1767231240000,
+        "actual": 49.99108391031623,
+        "label": false,
+        "detected": false,
+        "z": -0.18747656638209523
+      },
+      {
+        "ts": 1767231300000,
+        "actual": 50.43325027786195,
+        "label": false,
+        "detected": false,
+        "z": 0.7080886846226011
+      },
+      {
+        "ts": 1767231360000,
+        "actual": 50.66919460333884,
+        "label": false,
+        "detected": false,
+        "z": 1.1859711166169131
+      },
+      {
+        "ts": 1767231420000,
+        "actual": 49.347518721222876,
+        "label": false,
+        "detected": false,
+        "z": -1.4909556692984243
+      },
+      {
+        "ts": 1767231480000,
+        "actual": 50.55490842871368,
+        "label": false,
+        "detected": false,
+        "z": 0.9544955133668283
+      },
+      {
+        "ts": 1767231540000,
+        "actual": 68.51308812722564,
+        "label": true,
+        "detected": true,
+        "z": 37.32705319692292
+      },
+      {
+        "ts": 1767231600000,
+        "actual": 50.450425358489156,
+        "label": false,
+        "detected": false,
+        "z": 0.7428751508079507
+      },
+      {
+        "ts": 1767231660000,
+        "actual": 49.74610302373767,
+        "label": false,
+        "detected": false,
+        "z": -0.6836616796865201
+      },
+      {
+        "ts": 1767231720000,
+        "actual": 49.523196338489655,
+        "label": false,
+        "detected": false,
+        "z": -1.1351376312221566
+      },
+      {
+        "ts": 1767231780000,
+        "actual": 50.765067072585225,
+        "label": false,
+        "detected": false,
+        "z": 1.3801515389354477
+      },
+      {
+        "ts": 1767231840000,
+        "actual": 49.232097015529874,
+        "label": false,
+        "detected": false,
+        "z": -1.7247311810002603
+      },
+      {
+        "ts": 1767231900000,
+        "actual": 49.507296211272475,
+        "label": false,
+        "detected": false,
+        "z": -1.1673418024740265
+      },
+      {
+        "ts": 1767231960000,
+        "actual": 49.440362847596404,
+        "label": false,
+        "detected": false,
+        "z": -1.3029088628406216
+      },
+      {
+        "ts": 1767232020000,
+        "actual": 49.67641004696488,
+        "label": false,
+        "detected": false,
+        "z": -0.8248180697195762
+      },
+      {
+        "ts": 1767232080000,
+        "actual": 50.74071878194809,
+        "label": false,
+        "detected": false,
+        "z": 1.3308364290210177
+      },
+      {
+        "ts": 1767232140000,
+        "actual": 49.21010090969503,
+        "label": false,
+        "detected": false,
+        "z": -1.7692821678888582
+      },
+      {
+        "ts": 1767232200000,
+        "actual": 49.872145891934636,
+        "label": false,
+        "detected": false,
+        "z": -0.4283740296539852
+      },
+      {
+        "ts": 1767232260000,
+        "actual": 49.374628179892895,
+        "label": false,
+        "detected": false,
+        "z": -1.4360480803445763
+      },
+      {
+        "ts": 1767232320000,
+        "actual": 67.86215096898377,
+        "label": true,
+        "detected": true,
+        "z": 36.008642882848356
+      },
+      {
+        "ts": 1767232380000,
+        "actual": 50.31138386689126,
+        "label": false,
+        "detected": false,
+        "z": 0.4612600451315596
+      },
+      {
+        "ts": 1767232440000,
+        "actual": 50.621272868290546,
+        "label": false,
+        "detected": false,
+        "z": 1.0889102729455196
+      },
+      {
+        "ts": 1767232500000,
+        "actual": 49.58474566973746,
+        "label": false,
+        "detected": false,
+        "z": -1.0104754082809002
+      },
+      {
+        "ts": 1767232560000,
+        "actual": 50.51707150116563,
+        "label": false,
+        "detected": false,
+        "z": 0.8778604727939802
+      },
+      {
+        "ts": 1767232620000,
+        "actual": 49.378381793573496,
+        "label": false,
+        "detected": false,
+        "z": -1.4284454985455555
+      },
+      {
+        "ts": 1767232680000,
+        "actual": 50.49998387172818,
+        "label": false,
+        "detected": false,
+        "z": 0.8432511305430889
+      },
+      {
+        "ts": 1767232740000,
+        "actual": 50.00789890997112,
+        "label": false,
+        "detected": false,
+        "z": -0.15341940941160562
+      }
+    ],
+    "precision": 1,
+    "recall": 1
+  },
+  "method": "Forward-only rolling origins on a separate deterministic series. Fixed parameters. Labels and future targets excluded from forecast input. Not external validation."
+}

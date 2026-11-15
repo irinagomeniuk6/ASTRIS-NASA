@@ -1,0 +1,31 @@
+# Render Blueprint: deploy a Node.js web service, no Ollama weights.
+# All secrets are entered in Render dashboard, NEVER committed to GitHub.
+services:
+  - type: web
+    name: astris-space-health-demo
+    runtime: node
+    plan: free
+    buildCommand: npm run build
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: ASTRIS_AI_PROVIDER
+        value: groq
+      - key: ASTRIS_GROQ_MODEL
+        value: qwen/qwen3.8-27b
+      - key: ASTRIS_GROQ_DAILY_LIMIT
+        value: "30"
+      - key: ASTRIS_OLLAMA_AUTO_START
+        value: "0"
+      - key: GROQ_API_KEY
+        sync: false
+      - key: ASTRIS_OPERATOR_PASSWORD
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SECRET_KEY
+        sync: false

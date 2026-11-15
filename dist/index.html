@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#151a1d"><meta name="description" content="ASTRIS — показники екіпажу, графіки, прогнози та сигнали для наземного оператора.">
+  <title>ASTRIS · Наземна консоль</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="redesign.css"><link rel="stylesheet" href="enhancements.css"><link rel="stylesheet" href="analysis-v2.css"><link rel="stylesheet" href="dashboard.css"><link rel="stylesheet" href="research.css"><link rel="stylesheet" href="ground.css"><link rel="stylesheet" href="verification.css"><link rel="stylesheet" href="clarity.css"><link rel="stylesheet" href="auth-ground.css">
+</head>
+<body>
+  <a class="skip" href="#main">До вмісту</a>
+  <aside class="sidebar">
+    <a class="brand" href="#overview" aria-label="ASTRIS — огляд"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 5 36 33H4Z" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="m14 26 6-11 6 11M10 29h20" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="30" cy="11" r="3" fill="#e8956f"/></svg><span>ASTRIS<small>GROUND MONITORING</small></span></a>
+    <div class="mission-card"><span class="eyebrow">АКТИВНА МІСІЯ</span><b>ARES <span class="muted">/</span> 03 <span class="tag">DEMO</span></b><p><span class="green-dot"></span> Транзит до Марса</p><div class="mission-track"><i></i></div><div class="mission-progress"><span>День 128</span><span>240 днів</span></div></div>
+    <div class="nav-label">РОБОЧИЙ ПРОСТІР</div>
+    <nav aria-label="Головна навігація" id="nav">
+      <a href="#overview" data-view="overview"><span data-icon="grid"></span><span class="nav-text">Огляд</span></a>
+      <a href="#crew" data-view="crew"><span data-icon="users"></span><span class="nav-text">Екіпаж</span></a>
+      <a href="#analytics" data-view="analytics"><span data-icon="activity"></span><span class="nav-text">Аналіз</span></a>
+      <a href="#alerts" data-view="alerts"><span data-icon="bell"></span><span class="nav-text">Сигнали</span><span id="nav-alerts" class="nav-count amber">1</span></a>
+
+
+      <a href="#demo" data-view="demo" class="demo-nav"><span data-icon="settings"></span><span class="nav-text">Демо</span></a>
+    <a href="/accounts.html" class="astris-account-link" data-view="accounts"><span data-icon="users"></span><span class="nav-text">Акаунти</span></a>
+    </nav>
+    <div class="astris-auth-controls"><span>GROUND · ОПЕРАТОР</span><button id="astris-logout" type="button">Вийти</button></div>
+    <div class="sidebar-bottom"><div class="link-status"><span class="orbit-mark">◉</span><div><b>Автономний режим</b><small>Дані зберігаються на пристрої</small></div></div><button id="guide-btn" class="sidebar-guide"><span data-icon="book"></span>Довідка<span>↗</span></button><div class="user-line"><span class="avatar small">МК</span><div><b>Наземна консоль</b><small>Оператор · локальна сесія</small></div><span class="tiny-dot"></span></div></div>
+  </aside>
+  <div class="app-shell">
+    <main id="main" tabindex="-1"></main>
+    <footer><span>Демо · Змодельовані дані</span><span>Не для медичних рішень <button class="footer-about" data-action="guide">Про проєкт</button></span></footer>
+  </div>
+  <dialog id="modal"><div id="modal-content"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="sensor-config.js"></script><script src="transport.js"></script><script src="engine.js"></script><script src="operator.js"></script><script src="research.js"></script><script src="forecast.js"></script><script src="analytics.js"></script><script src="human-mesh.js"></script><script src="human-view.js"></script><script src="portraits.js"></script><script src="leadtime.js"></script><script src="benchmark.js"></script><script src="verification-ui.js"></script><script src="app.js"></script>
+</body>
+</html>

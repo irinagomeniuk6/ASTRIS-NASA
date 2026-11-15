@@ -1,0 +1,2 @@
+ASTRIS 2.7 | Automated test suite: 113/113 passed; npm run build and npm run check:standalone passed.
+Groq/Supabase integration tested against simulated HTTP services (not actual Groq or Supabase keys).
