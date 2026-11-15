@@ -24,7 +24,8 @@ async function query(uri,opts={}){
     // Avoid logging credentials, response bodies, and URLs with user data.
     throw Object.assign(Error(`Supabase data store returned HTTP ${r.status}. Check table astris_kv, RLS/grants and server key.`),{status:503});
   }
-  return r.status===204?null:r.json();
+  if (r.status === 204 || opts.method === 'POST') return null;
+  return r.json();
 }
 async function get(name,defaultValue){
   if(!enabled)return defaultValue;
